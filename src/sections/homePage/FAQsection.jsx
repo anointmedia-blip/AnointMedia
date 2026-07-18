@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const FAQsection = () => {
-  // Track open state per accordion item index (null means all closed)
   const [openIndex, setOpenIndex] = useState(null);
 
-  // Exact FAQ content mapped out to match your agency niche structural data
   const faqData = [
     {
       question: "What services does We Promote provide?",
@@ -55,9 +53,9 @@ const FAQsection = () => {
   };
 
   return (
-    <section className="w-full bg-[#f8fafc]/40 py-24 px-6 md:px-12 lg:px-24 font-sans antialiased select-none overflow-hidden">
+    // REMOVED 'select-none' FROM THE CLASS LIST BELOW
+    <section className="w-full bg-[#f8fafc]/40 py-24 px-6 md:px-12 lg:px-24 font-sans antialiased overflow-hidden">
       <div className="max-w-[1100px] mx-auto flex flex-col items-center">
-        {/* HEADING INFRASTRUCTURE PLATFORM */}
         <div className="text-center mb-20 max-w-3xl mx-auto">
           <span className="inline-flex items-center rounded-full border border-[#00B4AF]/20 bg-[#00B4AF]/5 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#00B4AF]">
             Frequently Asked Questions
@@ -73,7 +71,6 @@ const FAQsection = () => {
           </p>
         </div>
 
-        {/* ACCORDION CONTAINER ENGINE */}
         <div className="w-full flex flex-col gap-4">
           {faqData.map((faq, index) => {
             const isOpen = openIndex === index;
@@ -81,48 +78,31 @@ const FAQsection = () => {
               <div
                 key={index}
                 className={`w-full rounded-3xl overflow-hidden transition-all duration-300
-${
-  isOpen
-    ? "bg-white border border-[#00B4AF]/20 shadow-[0_15px_40px_rgba(0,180,175,0.08)]"
-    : "bg-white border border-slate-200 hover:border-slate-300 hover:shadow-md"
-}`}
+                ${
+                  isOpen
+                    ? "bg-white border border-[#00B4AF]/20 shadow-[0_15px_40px_rgba(0,180,175,0.08)]"
+                    : "bg-white border border-slate-200 hover:border-slate-300 hover:shadow-md"
+                }`}
               >
-                {/* Trigger Button Row Header */}
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full p-6 sm:p-7 flex items-center justify-between text-left gap-6 focus:outline-none"
                 >
                   <span className="text-[#10223d] font-bold text-lg md:text-xl leading-snug pr-4">
-  {faq.question}
-</span>
+                    {faq.question}
+                  </span>
 
-                  {/* High-Fidelity Custom Indicator Chevron Cross Frame */}
                   <motion.div
-  animate={{ rotate: isOpen ? 180 : 0 }}
-  className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-all
-  ${
-    isOpen
-      ? "bg-[#00B4AF] text-white"
-      : "bg-slate-100 text-slate-500"
-  }`}
->
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19 9l-7 7-7-7"
-                      />
+                    animate={{ rotate: isOpen ? 180 : 0 }}
+                    className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-all
+                    ${isOpen ? "bg-[#00B4AF] text-white" : "bg-slate-100 text-slate-500"}`}
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </motion.div>
                 </button>
 
-                {/* Animated Dropdown Smooth Expansion Layer */}
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div

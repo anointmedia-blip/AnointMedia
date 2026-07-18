@@ -4,63 +4,61 @@ import { useNavigate } from 'react-router-dom';
 
 const ProcessSection = () => {
   const [activeStep, setActiveStep] = useState(0);
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleConnectClick = () => {
-  // Check if the window is currently pointing directly to the root homepage path
-  if (window.location.pathname === "/") {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
-  } else {
-    // Navigate home first, then safely schedule a smooth execution interval
-    navigate("/");
-    setTimeout(() => {
+    if (window.location.pathname === "/") {
       const contactSection = document.getElementById("contact");
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: "smooth" });
       }
-    }, 100);
-  }
-};
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  };
 
   const steps = [
     {
       id: "01",
       label: "Discovery",
-      title: "Kick-Off Discovery & Deep Architectural Audit",
-      desc: "Every partnership begins with a deep technical audit. We break down near-term commercial targets, map out structural performance bottlenecks, and analyze your digital landscape to establish a definitive growth baseline.",
-      output: "Strategic Roadmap & Friction Report"
+      title: "Understanding Your Business",
+      desc: "We learn about your business, goals, audience, and challenges to identify the best opportunities for growth.",
+      output: "Project Strategy & Roadmap"
     },
     {
       id: "02",
-      label: "Engineering",
-      title: "Strategic Infrastructure & Pipeline Planning",
-      desc: "Data layers are aligned directly with marketing systems. We architect multi-channel distribution networks configured to bypass generic acquisition paths and protect structural return margins.",
-      output: "Data Topology & Funnel Architecture"
+      label: "Planning",
+      title: "Building The Right Strategy",
+      desc: "Based on our research, we create a clear action plan that aligns with your goals and sets the foundation for success.",
+      output: "Growth & Execution Plan"
     },
     {
       id: "03",
-      label: "Velocity",
-      title: "Continuous Sprint Momentum & Shared Telemetry",
-      desc: "We eliminate hidden data pools and black-box tracking. Your engineering and product leaders receive real-time updates, custom shared documentation spaces, and clear performance telemetry.",
-      output: "Integrated Operational Dashboard"
+      label: "Execution",
+      title: "Bringing Ideas To Life",
+      desc: "We design, build, optimize, and implement solutions that help your business create a stronger digital presence.",
+      output: "Launch-Ready Solution"
     },
     {
       id: "04",
-      label: "Yield",
-      title: "Result-Oriented Platform Optimization",
-      desc: "We pivot entirely toward scaled performance. By refining application layers, server response pipelines, and indexing structures, we convert basic traffic intent into sustainable revenue metrics.",
-      output: "Production-Ready Conversion Engine"
+      label: "Growth",
+      title: "Optimize & Scale",
+      desc: "After launch, we continuously improve performance, monitor results, and identify new opportunities for long-term growth.",
+      output: "Continuous Growth Framework"
     }
   ];
 
   return (
+    // 'select-none' was not present here, keeping this standard section structure
     <section className="w-full bg-[#FFFFFF] py-24 px-6 md:px-12 lg:px-20 font-sans antialiased text-[#0F172A]">
       <div className="max-w-4xl mx-auto">
         
-        {/* REFINED HEADER LAYER - OPTIMIZED VERTICAL SPACING */}
         <div className="space-y-2 mb-14 text-center md:text-left">
           <div className="inline-flex items-center gap-2 px-2.5 py-0.5 bg-[#00B4AF]/10 border border-[#00B4AF]/20 rounded-md">
             <span className="w-1.5 h-1.5 rounded-full bg-[#00B4AF]" />
@@ -71,7 +69,6 @@ const ProcessSection = () => {
           </h2>
         </div>
 
-        {/* LINEAR HORIZONTAL CONTROL TRACK */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
           {steps.map((step, idx) => {
             const isActive = activeStep === idx;
@@ -81,7 +78,6 @@ const ProcessSection = () => {
                 onClick={() => setActiveStep(idx)}
                 className="w-full text-left focus:outline-none group relative"
               >
-                {/* Visual Upper Bar Meter - Using Single Amber Accent */}
                 <div className="w-full h-[3px] bg-[#E2E8F0] rounded-full relative overflow-hidden mb-3">
                   <motion.div 
                     className="absolute inset-0 bg-[#00B4AF]"
@@ -104,10 +100,8 @@ const ProcessSection = () => {
           })}
         </div>
 
-        {/* FLUID INTERACTIVE CANVAS FRAME - SPATIALLY TIGHTENED */}
         <div className="w-full bg-[#FDFBF7] border border-[#F1E4D1] rounded-xl p-6 md:p-8 min-h-[260px] flex flex-col justify-between relative overflow-hidden">
           
-          {/* Subtle Warm Amber/Yellow Geometric Radial Background Pattern */}
           <div className="absolute inset-0 bg-[radial-gradient(#F59E0B_1px,transparent_1px)] bg-[size:24px_24px] opacity-[0.12] pointer-events-none" />
 
           <AnimatePresence mode="wait">
@@ -119,7 +113,6 @@ const ProcessSection = () => {
               transition={{ duration: 0.18, ease: "easeOut" }}
               className="relative z-10 flex flex-col md:flex-row md:items-start justify-between gap-8 h-full"
             >
-              {/* Primary Content Copy Block */}
               <div className="space-y-3 max-w-xl">
                 <h3 className="text-xl md:text-2xl font-extrabold text-[#0F172A] tracking-tight leading-snug">
                   {steps[activeStep].title}
@@ -129,7 +122,6 @@ const ProcessSection = () => {
                 </p>
               </div>
 
-              {/* Sidebar Action & Output Specifications */}
               <div className="md:w-56 flex flex-col justify-between h-full space-y-5 md:space-y-0 md:text-right shrink-0 border-t md:border-t-0 md:border-l border-[#EADCC6] pt-5 md:pt-0 md:pl-6">
                 <div className="space-y-0.5">
                   <span className="text-[10px] font-mono uppercase tracking-wider text-[#94A3B8] block">

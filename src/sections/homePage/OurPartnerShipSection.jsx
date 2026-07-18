@@ -1,15 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import triveniLogo from "../../assets/partnerships/triveniLogo.png";
-import IDClogo from "../../assets/partnerships/logoIDC.png";
-import theClassicLogo from "../../assets/partnerships/logoTheClassic.png";
-import altezzaLogo from "../../assets/partnerships/altezzalogo.jpg";
-import logoLuxuryKuche from "../../assets/partnerships/logoLuxuryKuche.png";
-import logoAstheticHomes from "../../assets/partnerships/logoAstheticHomes.png";
-import logoDecor from "../../assets/partnerships/logoDecor.png";
-import logoAadique from "../../assets/partnerships/logoAadique.png";
-import logoPunjabModular from "../../assets/partnerships/logoPunjabModular.png";
-import logoBachan from "../../assets/partnerships/logoBachan.png";
+
 
 const OurPartnerShipSection = () => {
   // Container animation for a clean staggered entrance
@@ -31,46 +22,10 @@ const OurPartnerShipSection = () => {
   };
 
   const partners = [
-    {
-      name: "Triveni",
-      logo: triveniLogo,
-    },
-    {
-      name: "The Classic",
-      logo: theClassicLogo,
-    },
-    {
-      name: "Altexxa",
-      logo: altezzaLogo,
-    },
-    {
-      name: "Luxury Kuche",
-      logo: logoLuxuryKuche,
-    },
-    {
-      name: "Asthetic Homes",
-      logo: logoAstheticHomes,
-    },
-    {
-      name: "Decor",
-      logo: logoDecor,
-    },
-    {
-      name: "Aadeque",
-      logo: logoAadique,
-    },
-    {
-      name: "Punjab Modular Kitchen",
-      logo: logoPunjabModular,
-    },
-    {
-      name: "Bachan Industries",
-      logo: logoBachan,
-    },
-    {
-      name: "IDC",
-      logo: IDClogo,
-    },
+    // {
+    //   name: "Triveni",
+    //   logo: triveniLogo,
+    // },
   ];
 
   return (

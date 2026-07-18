@@ -59,11 +59,8 @@ const Contact = () => {
       );
 
       const result = await response.json();
-console.log(result);
       if (result.success) {
         toast.success("Message sent successfully!");
-        console.log(result);
-
         setFormData({
           fullName: "",
           email: "",
@@ -86,14 +83,15 @@ console.log(result);
   };
 
   return (
+    // REMOVED 'select-none' FROM THE CLASS LIST BELOW
     <section
       id="contact"
-      className="w-full bg-white py-24 px-6 md:px-12 lg:px-24 font-sans antialiased select-none overflow-hidden"
+      className="w-full bg-white py-24 px-6 md:px-12 lg:px-24 font-sans antialiased overflow-hidden"
     >
       <div className="max-w-[1320px] mx-auto grid grid-cols-1 lg:grid-cols-12 rounded-3xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(16,34,61,0.07)] border border-slate-100">
+        
         {/* LEFT COLUMN: BRAND INFO CARD HUB */}
         <div className="lg:col-span-5 bg-[#10223d] p-8 sm:p-12 md:p-16 flex flex-col justify-between relative text-white overflow-hidden">
-          {/* Ambient Decorative Background Glow */}
           <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-[#00b4af]/10 rounded-full blur-[80px] pointer-events-none" />
 
           <div className="relative z-10">
@@ -109,59 +107,31 @@ console.log(result);
               maximize your multi-channel ROAS metrics? Drop us a message.
             </p>
 
-            {/* Direct Contact Resource Vectors */}
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-4 group">
                 <div className="w-11 h-11 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-[#00b4af] group-hover:bg-white/10 transition-all duration-300">
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
-                <a
-                  href="tel:+19069706661"
-                  className="font-bold text-[15.5px] tracking-wide text-white/90 group-hover:text-white transition-colors"
-                >
+                <a href="tel:+19069706661" className="font-bold text-[15.5px] tracking-wide text-white/90 group-hover:text-white transition-colors">
                   (906) 970-6661
                 </a>
               </div>
 
               <div className="flex items-center gap-4 group">
                 <div className="w-11 h-11 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center text-[#00b4af] group-hover:bg-white/10 transition-all duration-300">
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <a
-                  href="mailto:sales@wepromote.us"
-                  className="font-bold text-[15.5px] tracking-wide text-white/90 group-hover:text-white transition-colors"
-                >
+                <a href="mailto:sales@wepromote.us" className="font-bold text-[15.5px] tracking-wide text-white/90 group-hover:text-white transition-colors">
                   sales@wepromote.us
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Bottom Trust Watermark Sign-off */}
           <div className="mt-16 pt-6 border-t border-white/10 flex flex-col relative z-10">
             <span className="text-[12px] font-extrabold tracking-widest text-[#00b4af] uppercase">
               Global Execution Framework
@@ -175,121 +145,38 @@ console.log(result);
         {/* RIGHT COLUMN: REVENUE LEAD CAPTURE FORM */}
         <div className="lg:col-span-7 bg-[#f8fafc]/60 p-8 sm:p-12 md:p-16 flex flex-col justify-center">
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Row 1: Demographics data */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block mb-2 text-sm font-bold text-[#10223d]">
-                  Full Name *
-                </label>
-                <input
-                  type="text"
-                  name="fullName"
-                  value={formData.fullName}
-                  onChange={handleChange}
-                  placeholder="John Smith"
-                  required
-                  className="w-full h-14 px-5 rounded-xl border border-slate-200 bg-white text-[#10223d] font-medium focus:border-[#00b4af] focus:ring-4 focus:ring-[#00b4af]/10 outline-none transition duration-200"
-                />
+                <label className="block mb-2 text-sm font-bold text-[#10223d]">Full Name *</label>
+                <input type="text" name="fullName" value={formData.fullName} onChange={handleChange} placeholder="John Smith" required className="w-full h-14 px-5 rounded-xl border border-slate-200 bg-white text-[#10223d] font-medium focus:border-[#00b4af] focus:ring-4 focus:ring-[#00b4af]/10 outline-none transition duration-200" />
               </div>
-
               <div>
-                <label className="block mb-2 text-sm font-bold text-[#10223d]">
-                  Email Address *
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="john@company.com"
-                  required
-                  className="w-full h-14 px-5 rounded-xl border border-slate-200 bg-white text-[#10223d] font-medium focus:border-[#00b4af] focus:ring-4 focus:ring-[#00b4af]/10 outline-none transition duration-200"
-                />
+                <label className="block mb-2 text-sm font-bold text-[#10223d]">Email Address *</label>
+                <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="john@company.com" required className="w-full h-14 px-5 rounded-xl border border-slate-200 bg-white text-[#10223d] font-medium focus:border-[#00b4af] focus:ring-4 focus:ring-[#00b4af]/10 outline-none transition duration-200" />
               </div>
             </div>
 
-            {/* Row 2: Connections metrics */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block mb-2 text-sm font-bold text-[#10223d]">
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="+1 (555) 123-4567"
-                  className="w-full h-14 px-5 rounded-xl border border-slate-200 bg-white text-[#10223d] font-medium focus:border-[#00b4af] focus:ring-4 focus:ring-[#00b4af]/10 outline-none transition duration-200"
-                />
+                <label className="block mb-2 text-sm font-bold text-[#10223d]">Phone Number</label>
+                <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="+1 (555) 123-4567" className="w-full h-14 px-5 rounded-xl border border-slate-200 bg-white text-[#10223d] font-medium focus:border-[#00b4af] focus:ring-4 focus:ring-[#00b4af]/10 outline-none transition duration-200" />
               </div>
-
               <div>
-                <label className="block mb-2 text-sm font-bold text-[#10223d]">
-                  Company Name
-                </label>
-                <input
-                  type="text"
-                  name="company"
-                  value={formData.company}
-                  onChange={handleChange}
-                  placeholder="Your Company"
-                  className="w-full h-14 px-5 rounded-xl border border-slate-200 bg-white text-[#10223d] font-medium focus:border-[#00b4af] focus:ring-4 focus:ring-[#00b4af]/10 outline-none transition duration-200"
-                />
+                <label className="block mb-2 text-sm font-bold text-[#10223d]">Company Name</label>
+                <input type="text" name="company" value={formData.company} onChange={handleChange} placeholder="Your Company" className="w-full h-14 px-5 rounded-xl border border-slate-200 bg-white text-[#10223d] font-medium focus:border-[#00b4af] focus:ring-4 focus:ring-[#00b4af]/10 outline-none transition duration-200" />
               </div>
             </div>
 
-            {/* Row 3: SERVICES SYSTEM CAPABILITIES SELECTION (Full Width Layout) */}
             <div className="w-full">
               <label className="flex items-center justify-between mb-3">
-                <span className="text-sm font-bold text-[#10223d]">
-                  Services Needed *
-                </span>
-                {formData.service.length > 0 && (
-                  <span className="text-xs font-bold text-[#00b4af] bg-[#00b4af]/10 px-2.5 py-0.5 rounded-md">
-                    {formData.service.length} Selected
-                  </span>
-                )}
+                <span className="text-sm font-bold text-[#10223d]">Services Needed *</span>
+                {formData.service.length > 0 && <span className="text-xs font-bold text-[#00b4af] bg-[#00b4af]/10 px-2.5 py-0.5 rounded-md">{formData.service.length} Selected</span>}
               </label>
-
               <div className="flex flex-wrap gap-2.5">
-                {[
-                  "Website Development",
-                  "SEO",
-                  "Digital Marketing",
-                  "Google Ads",
-                  "UI/UX Design",
-                  "Brand Strategy",
-                  "E-Commerce",
-                  "Social Media Marketing",
-                ].map((service) => {
+                {["Website Development", "SEO", "Digital Marketing", "Google Ads", "UI/UX Design", "Brand Strategy", "E-Commerce", "Social Media Marketing"].map((service) => {
                   const isSelected = formData.service.includes(service);
                   return (
-                    <button
-                      type="button"
-                      key={service}
-                      onClick={() => handleMultiSelect("service", service)}
-                      className={`px-4 py-2.5 rounded-xl border text-xs sm:text-sm font-semibold transition-all duration-200 flex items-center gap-1.5 ${
-                        isSelected
-                          ? "bg-[#00b4af] border-[#00b4af] text-white shadow-md shadow-[#00b4af]/10"
-                          : "bg-white border-slate-200 text-slate-600 hover:border-[#00b4af]/40 hover:text-[#00b4af]"
-                      }`}
-                    >
-                      {isSelected && (
-                        <svg
-                          className="w-3.5 h-3.5 shrink-0"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="3"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                      )}
+                    <button type="button" key={service} onClick={() => handleMultiSelect("service", service)} className={`px-4 py-2.5 rounded-xl border text-xs sm:text-sm font-semibold transition-all duration-200 flex items-center gap-1.5 ${isSelected ? "bg-[#00b4af] border-[#00b4af] text-white shadow-md shadow-[#00b4af]/10" : "bg-white border-slate-200 text-slate-600 hover:border-[#00b4af]/40 hover:text-[#00b4af]"}`}>
                       {service}
                     </button>
                   );
@@ -297,54 +184,16 @@ console.log(result);
               </div>
             </div>
 
-            {/* Row 4: BUDGET MATRIX ARCHITECTURE (Full Width Layout) */}
             <div className="w-full">
               <label className="flex items-center justify-between mb-3">
-                <span className="text-sm font-bold text-[#10223d]">
-                  Budget Range *
-                </span>
-                {formData.budget.length > 0 && (
-                  <span className="text-xs font-bold text-[#10223d] bg-[#10223d]/5 px-2.5 py-0.5 rounded-md">
-                    {formData.budget.length} Selected
-                  </span>
-                )}
+                <span className="text-sm font-bold text-[#10223d]">Budget Range *</span>
+                {formData.budget.length > 0 && <span className="text-xs font-bold text-[#10223d] bg-[#10223d]/5 px-2.5 py-0.5 rounded-md">{formData.budget.length} Selected</span>}
               </label>
-
               <div className="flex flex-wrap gap-2.5">
-                {[
-                  "$500 - $1,000",
-                  "$1,000 - $3,000",
-                  "$3,000 - $5,000",
-                  "$5,000 - $10,000",
-                  "$10,000+",
-                ].map((budget) => {
+                {["$500 - $1,000", "$1,000 - $3,000", "$3,000 - $5,000", "$5,000 - $10,000", "$10,000+"].map((budget) => {
                   const isSelected = formData.budget.includes(budget);
                   return (
-                    <button
-                      type="button"
-                      key={budget}
-                      onClick={() => handleMultiSelect("budget", budget)}
-                      className={`px-4 py-2.5 rounded-xl border text-xs sm:text-sm font-semibold transition-all duration-200 flex items-center gap-1.5 ${
-                        isSelected
-                          ? "bg-[#10223d] border-[#10223d] text-white shadow-md"
-                          : "bg-white border-slate-200 text-slate-600 hover:border-[#10223d]/30 hover:text-[#10223d]"
-                      }`}
-                    >
-                      {isSelected && (
-                        <svg
-                          className="w-3.5 h-3.5 shrink-0"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="3"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M5 13l4 4L19 7"
-                          />
-                        </svg>
-                      )}
+                    <button type="button" key={budget} onClick={() => handleMultiSelect("budget", budget)} className={`px-4 py-2.5 rounded-xl border text-xs sm:text-sm font-semibold transition-all duration-200 ${isSelected ? "bg-[#10223d] border-[#10223d] text-white shadow-md" : "bg-white border-slate-200 text-slate-600 hover:border-[#10223d]/30 hover:text-[#10223d]"}`}>
                       {budget}
                     </button>
                   );
@@ -352,32 +201,14 @@ console.log(result);
               </div>
             </div>
 
-            {/* Row 5: Preferred Contact Routing */}
             <div>
-              <label className="block mb-3 text-sm font-bold text-[#10223d]">
-                Preferred Contact Method *
-              </label>
-
+              <label className="block mb-3 text-sm font-bold text-[#10223d]">Preferred Contact Method *</label>
               <div className="grid grid-cols-3 gap-3">
                 {["Call", "Email", "Any"].map((method) => {
                   const isSelected = formData.contactMethod === method;
                   return (
-                    <label
-                      key={method}
-                      className={`h-14 rounded-xl border cursor-pointer flex items-center justify-center text-sm font-bold transition duration-200 ${
-                        isSelected
-                          ? "border-[#00b4af] bg-[#00b4af]/5 text-[#00b4af]"
-                          : "border-slate-200 bg-white text-slate-500 hover:border-slate-300"
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name="contactMethod"
-                        value={method}
-                        checked={isSelected}
-                        onChange={handleChange}
-                        className="hidden"
-                      />
+                    <label key={method} className={`h-14 rounded-xl border cursor-pointer flex items-center justify-center text-sm font-bold transition duration-200 ${isSelected ? "border-[#00b4af] bg-[#00b4af]/5 text-[#00b4af]" : "border-slate-200 bg-white text-slate-500 hover:border-slate-300"}`}>
+                      <input type="radio" name="contactMethod" value={method} checked={isSelected} onChange={handleChange} className="hidden" />
                       {method}
                     </label>
                   );
@@ -385,39 +216,14 @@ console.log(result);
               </div>
             </div>
 
-            {/* Row 6: Project Details Text Area */}
             <div>
-              <label className="block mb-2 text-sm font-bold text-[#10223d]">
-                Project Details *
-              </label>
-              <textarea
-                name="projectDetails"
-                value={formData.projectDetails}
-                onChange={handleChange}
-                rows={5}
-                required
-                placeholder="Tell us about your business, goals, target audience, challenges, and project requirements..."
-                className="w-full rounded-xl border border-slate-200 bg-white p-5 text-[#10223d] font-medium focus:border-[#00b4af] focus:ring-4 focus:ring-[#00b4af]/10 outline-none resize-none transition duration-200"
-              />
+              <label className="block mb-2 text-sm font-bold text-[#10223d]">Project Details *</label>
+              <textarea name="projectDetails" value={formData.projectDetails} onChange={handleChange} rows={5} required placeholder="Tell us about your business, goals, target audience, challenges, and project requirements..." className="w-full rounded-xl border border-slate-200 bg-white p-5 text-[#10223d] font-medium focus:border-[#00b4af] focus:ring-4 focus:ring-[#00b4af]/10 outline-none resize-none transition duration-200" />
             </div>
 
-            {/* CTA Interaction Trigger Button */}
-            <motion.button
-  whileHover={!loading ? { y: -2 } : {}}
-  whileTap={!loading ? { scale: 0.98 } : {}}
-  type="submit"
-  disabled={loading}
-  className="w-full h-16 rounded-xl bg-[#00b4af] hover:bg-[#009691] disabled:opacity-70 disabled:cursor-not-allowed text-white font-black tracking-[0.12em] text-sm uppercase transition-all shadow-[0_10px_30px_rgba(0,180,175,0.2)]"
->
-  {loading ? (
-    <div className="flex items-center justify-center gap-3">
-      <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
-      Sending...
-    </div>
-  ) : (
-    "Get Free Strategy Consultation"
-  )}
-</motion.button>
+            <motion.button whileHover={!loading ? { y: -2 } : {}} whileTap={!loading ? { scale: 0.98 } : {}} type="submit" disabled={loading} className="w-full h-16 rounded-xl bg-[#00b4af] hover:bg-[#009691] disabled:opacity-70 disabled:cursor-not-allowed text-white font-black tracking-[0.12em] text-sm uppercase transition-all shadow-[0_10px_30px_rgba(0,180,175,0.2)]">
+              {loading ? "Sending..." : "Get Free Strategy Consultation"}
+            </motion.button>
           </form>
         </div>
       </div>

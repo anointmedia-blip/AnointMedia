@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Journey = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -7,76 +7,76 @@ const Journey = () => {
   const highlights = [
     {
       num: "01",
-      title: "Boost 20x ROI Engine",
-      tagline: "Direct Capital Optimization",
-      desc: "Your business scale is our absolute priority. We architect dedicated acquisition funnels configured to protect conversion performance and secure a predictable target ROAS yield matrix.",
+      title: "Discover & Understand",
+      tagline: "Understanding Your Business",
+      desc: "We start by understanding your goals, challenges, audience, and opportunities to build a clear roadmap for growth.",
       details: [
-        { label: "Target Yield", value: "20%+ ROAS" },
-        { label: "Funnel Integrity", value: "Server-Side Verified" },
-        { label: "Ad Spend Efficiency", value: "Maximized" }
-      ]
+        { label: "Focus", value: "Business Goals" },
+        { label: "Research", value: "Market Insights" },
+        { label: "Outcome", value: "Clear Direction" },
+      ],
     },
     {
       num: "02",
-      title: "Permanent Search Dominance",
-      tagline: "Structural Keyword Equity",
-      desc: "We eliminate short-term keyword positioning spikes. Our engineers target deep programmatic indexing architectures to permanently insulate your domain authority and protect traffic volume.",
+      title: "Plan & Strategize",
+      tagline: "Building The Right Approach",
+      desc: "Every successful project starts with a strong strategy. We define priorities, identify opportunities, and create a roadmap for execution.",
       details: [
-        { label: "Indexing Velocity", value: "Real-time" },
-        { label: "Crawl Efficiency", value: "99.2%" },
-        { label: "Domain Protection", value: "Continuous" }
-      ]
+        { label: "Focus", value: "Strategy" },
+        { label: "Approach", value: "Data-Driven" },
+        { label: "Outcome", value: "Growth Plan" },
+      ],
     },
     {
       num: "03",
-      title: "Granular Capital Accountability",
-      desc: "No abstract data pools or black-box tracking scripts. We install explicit first-party attribution infrastructure providing clear, uninterrupted data provenance directly to your revenue loops.",
-      tagline: "Attribution Provenance Engine",
+      title: "Create & Execute",
+      tagline: "Bringing Ideas To Life",
+      desc: "From branding and design to development and marketing, we transform strategy into meaningful experiences and measurable results.",
       details: [
-        { label: "Data Loss Margin", value: "0.00%" },
-        { label: "Telemetry Standard", value: "First-Party Node" },
-        { label: "Auditing Overhead", value: "Zero" }
-      ]
+        { label: "Focus", value: "Execution" },
+        { label: "Services", value: "End-to-End" },
+        { label: "Outcome", value: "Market Impact" },
+      ],
     },
     {
       num: "04",
-      title: "Cross-Vertical Infrastructure",
-      tagline: "Multi-Platform Adaptation",
-      desc: "Deploying deep system specialization across complex corporate sectors. We bypass baseline assumptions to resolve technical structural blockages inside competitive organic indexes.",
+      title: "Optimize & Scale",
+      tagline: "Continuous Improvement",
+      desc: "We monitor performance, refine strategies, and uncover new opportunities to help your business grow sustainably over time.",
       details: [
-        { label: "System Sync", value: "Multi-Pipeline" },
-        { label: "Latency Ceiling", value: "<12ms" },
-        { label: "Integration Rate", value: "100%" }
-      ]
-    }
+        { label: "Focus", value: "Growth" },
+        { label: "Method", value: "Optimization" },
+        { label: "Outcome", value: "Long-Term Success" },
+      ],
+    },
   ];
 
   return (
+    // Removed select-none to ensure text is selectable
     <section className="w-full bg-[#FFFFFF] py-32 px-6 md:px-12 lg:px-24 font-sans antialiased text-[#0F172A]">
       <div className="max-w-6xl mx-auto space-y-20">
         
-        {/* REFINED ARCHITECTURAL HEADER BLOCK */}
         <div className="w-full border-b border-[#E2E8F0] pb-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
           <div className="lg:col-span-7 space-y-4">
             <div className="inline-flex items-center gap-2 px-2.5 py-0.5 bg-[#00B4AF]/10 border border-[#00B4AF] rounded-md">
               <span className="w-1.5 h-1.5 rounded-full bg-[#00B4AF]" />
-              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#00B4AF]">Operational Execution</span>
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#00B4AF]">
+                Operational Execution
+              </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-black tracking-tight text-[#0F172A] leading-[1.1]">
-              The Lifecycle of Scale.
+              How We Help You Grow
             </h2>
           </div>
           <div className="lg:col-span-5">
             <p className="text-[#64748B] text-sm md:text-base font-normal leading-relaxed">
-              We eliminate chaotic marketing fragmentation. Our frameworks align infrastructure engineering directly with secure consumer acquisition pipelines to yield verifiable fiscal loops.
+              A simple process focused on visibility, conversions, and long-term
+              business growth.
             </p>
           </div>
         </div>
 
-        {/* HIGH-FIDELITY INTERACTIVE CONTROLLER GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
-          {/* LEFT COLUMN: CRISP SELECTABLE TIMELINE INTERFACES */}
           <div className="lg:col-span-5 space-y-3">
             {highlights.map((item, idx) => {
               const isActive = activeIndex === idx;
@@ -85,19 +85,22 @@ const Journey = () => {
                   key={idx}
                   onClick={() => setActiveIndex(idx)}
                   className={`w-full text-left p-6 rounded-xl border transition-all duration-300 relative overflow-hidden flex items-start gap-4 focus:outline-none ${
-                    isActive 
-                      ? 'bg-[#F8FAFC] border-[#00B4AF] shadow-[0_4px_20px_rgba(245,158,11,0.04)]' 
-                      : 'bg-white border-[#E2E8F0] hover:border-[#CBD5E1]'
+                    isActive
+                      ? "bg-[#F8FAFC] border-[#00B4AF] shadow-[0_4px_20px_rgba(245,158,11,0.04)]"
+                      : "bg-white border-[#E2E8F0] hover:border-[#CBD5E1]"
                   }`}
                 >
-                  {/* Left-Side Colored Accent Stripe for Active State */}
-                  <div className={`absolute left-0 top-0 bottom-0 w-[3px] bg-[#00B4AF] transition-transform duration-300 origin-top ${isActive ? 'scale-y-100' : 'scale-y-0'}`} />
+                  <div
+                    className={`absolute left-0 top-0 bottom-0 w-[3px] bg-[#00B4AF] transition-transform duration-300 origin-top ${isActive ? "scale-y-100" : "scale-y-0"}`}
+                  />
 
-                  <span className={`text-xs font-mono font-bold px-2 py-0.5 rounded border transition-colors duration-200 ${
-                    isActive 
-                      ? 'bg-[#00B4AF]/10 text-[#00B4AF]/70 border-[#00B4AF]' 
-                      : 'bg-[#F8FAFC] text-[#64748B] border-[#E2E8F0]'
-                  }`}>
+                  <span
+                    className={`text-xs font-mono font-bold px-2 py-0.5 rounded border transition-colors duration-200 ${
+                      isActive
+                        ? "bg-[#00B4AF]/10 text-[#00B4AF]/70 border-[#00B4AF]"
+                        : "bg-[#F8FAFC] text-[#64748B] border-[#E2E8F0]"
+                    }`}
+                  >
                     {item.num}
                   </span>
 
@@ -114,10 +117,7 @@ const Journey = () => {
             })}
           </div>
 
-          {/* RIGHT COLUMN: DYNAMIC PREVIEW CANVAS WITH GRAPHIC DATA SPLITS */}
           <div className="lg:col-span-7 bg-[#F8FAFC] border border-[#E2E8F0] rounded-2xl p-8 lg:p-10 min-h-[420px] flex flex-col justify-between relative overflow-hidden">
-            
-            {/* Background Mesh Overlay Pattern for Technical Styling */}
             <div className="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] bg-[size:20px_20px] opacity-40 pointer-events-none" />
 
             <AnimatePresence mode="wait">
@@ -129,7 +129,6 @@ const Journey = () => {
                 transition={{ duration: 0.25, ease: "easeInOut" }}
                 className="space-y-8 relative z-10 flex-1 flex flex-col justify-between"
               >
-                {/* Upper Narrative Workspace */}
                 <div className="space-y-4">
                   <div className="text-[10px] font-mono font-bold text-[#00B4AF] uppercase tracking-widest">
                     // Deployment Vector Focus
@@ -142,11 +141,10 @@ const Journey = () => {
                   </p>
                 </div>
 
-                {/* Lower Metrics Display Dashboard Array */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-[#E2E8F0] pt-6 mt-auto">
                   {highlights[activeIndex].details.map((detail, dIdx) => (
-                    <div 
-                      key={dIdx} 
+                    <div
+                      key={dIdx}
                       className="bg-white border border-[#E2E8F0] p-4 rounded-xl shadow-xs"
                     >
                       <span className="text-[10px] font-mono uppercase tracking-wider text-[#64748B] block">
@@ -161,9 +159,7 @@ const Journey = () => {
               </motion.div>
             </AnimatePresence>
           </div>
-
         </div>
-
       </div>
     </section>
   );

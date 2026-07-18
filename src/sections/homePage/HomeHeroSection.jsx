@@ -35,14 +35,20 @@ const HomeHeroSection = () => {
     }, 100);
   }
 };
-  const capabilities = [
-    "Web Design",
-    "Web Development",
-    "UI/UX Design",
-    "Ecommerce",
-    "CMS Development",
-    "SEO",
-  ];
+const capabilities = [
+  "Brand Identity",
+  "Web Design",
+  "Web Development",
+  "UI/UX Design",
+  "Ecommerce",
+  "SEO",
+  "Performance Marketing",
+  "Content Strategy",
+  "Lead Generation",
+  "Conversion Optimization",
+  "Analytics & Reporting",
+  "Digital Strategy",
+];
   const [imagesLoaded, setImagesLoaded] = useState({
     img1: false,
     img2: false,
@@ -54,10 +60,6 @@ const HomeHeroSection = () => {
     // Trigger global text animations slightly after mount
     setIsPageLoaded(true);
   }, []);
-
-  const handleImageLoad = (imgKey) => {
-    setImagesLoaded((prev) => ({ ...prev, [imgKey]: true }));
-  };
 
   // Animation variants for text hierarchy
   const containerVariants = {
@@ -103,7 +105,7 @@ const HomeHeroSection = () => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#00B4AF] bg-cyan-50 text-sm font-semibold text-[#00B4AF] mb-8 shadow-sm"
             >
               <span className="w-2 h-2 rounded-full bg-[#00B4AF] animate-pulse" />
-              Trusted by 50+ Growing Businesses
+              Trusted by 500+ Growing Businesses
             </motion.div>
 
             {/* Headline */}
@@ -111,13 +113,13 @@ const HomeHeroSection = () => {
               variants={itemVariants}
               className="text-[56px] lg:text-[78px] font-normal leading-[0.92] tracking-[-0.05em] text-slate-900"
             >
-              Websites That
+Helping Businesses
               <br />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-950 via-slate-800 to-[#00B4AF]">
-                Turn Traffic
+             Grow Without 
               </span>
               <br />
-              Into Revenue
+Limits
             </motion.h1>
 
             {/* Subtext */}
@@ -125,9 +127,10 @@ const HomeHeroSection = () => {
               variants={itemVariants}
               className="text-slate-600 text-[19px] leading-[1.7] mt-8 max-w-[620px] font-medium"
             >
-              We help ambitious brands grow through high-converting websites,
+              {/* We help ambitious brands grow through high-converting websites,
               SEO, performance marketing, branding, and digital experiences
-              designed to generate leads and revenue.
+              designed to generate leads and revenue. */}
+              We build distinctive brands and growth-driven digital ecosystems that attract attention, earn trust, and turn market opportunities into lasting success.
             </motion.p>
 
             {/* Call to Actions */}
@@ -157,7 +160,7 @@ const HomeHeroSection = () => {
               {/* Stats Inline Group */}
               <div className="flex items-center gap-x-8">
                 {[
-                  { value: "150+", label: "Delivered" },
+                  { value: "6000+", label: "Delivered" },
                   { value: "4.9★", label: "Rating" },
                   { value: "327%", label: "ROI/Growth" },
                 ].map((stat, idx) => (
