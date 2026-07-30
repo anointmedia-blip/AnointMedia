@@ -114,6 +114,9 @@ const capabilities = [
               className="text-[56px] lg:text-[78px] font-normal leading-[0.92] tracking-[-0.05em] text-slate-900"
             >
 Helping Businesses
+
+
+
               <br />
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-950 via-slate-800 to-[#00B4AF]">
              Grow Without 
@@ -130,7 +133,7 @@ Limits
               {/* We help ambitious brands grow through high-converting websites,
               SEO, performance marketing, branding, and digital experiences
               designed to generate leads and revenue. */}
-              We build distinctive brands and growth-driven digital ecosystems that attract attention, earn trust, and turn market opportunities into lasting success.
+              We build powerful brands with SEO, Digital Marketing, Website Development, Social Media Marketing, and Performance Advertising to help businesses rank higher on Google, generate quality leads, and achieve sustainable business growth. 
             </motion.p>
 
             {/* Call to Actions */}

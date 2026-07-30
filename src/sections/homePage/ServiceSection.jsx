@@ -26,41 +26,41 @@ const ServiceSection = () => {
 
   const servicesData = [
     {
-      title: "Enterprise SEO",
-      tagline: "High-Intent Organic Scale",
-      desc: "We fix technical indexing bottlenecks, optimize architecture, and build programmatic models to secure premium search visibility across your core customer acquisition funnels.",
+      title: "Search Engine Optimization (SEO)",
+      tagline: "Rank Higher on Google & Grow Your Organic Traffic",
+      desc: "Our Search Engine Optimization (SEO) Services in USA help your business achieve higher rankings on Google, attract targeted organic traffic, and generate qualified leads. We optimize every aspect of your website, including technical SEO, on-page SEO, off-page SEO, keyword research, content optimization, local SEO, and site performance. Using data-driven strategies and Google's best practices, we improve your online visibility, strengthen your domain authority, and drive sustainable business growth with long-term organic results.",
       features: ["Technical Crawl Budget Audits", "Programmatic SEO Architecture", "Data-Driven Link Building", "Core Web Vitals Refinement"],
       metric: "1.5M+",
       metricSub: "Keywords Ranked #1"
     },
     {
-      title: "Paid Performance",
-      tagline: "Attribution-Driven PPC",
-      desc: "Direct-response advertising systems engineered across enterprise search channels. We deploy exact server-side attribution tracking models to drastically lower your target CAC.",
+      title: "Paid Performance Marketing (PPC)",
+      tagline: "Maximize ROI with Google Ads & Performance Marketing",
+      desc: "Our Paid Performance Marketing Services are designed to help businesses generate high-quality leads, increase conversions, and maximize return on investment (ROI). We create and manage Google Ads, Meta Ads (Facebook & Instagram), YouTube Ads, LinkedIn Ads, and PPC campaigns using advanced audience targeting, keyword research, conversion tracking, and continuous campaign optimization. With data-driven strategies and real-time analytics, we reduce cost per acquisition (CPA), improve ad performance, and deliver measurable business growth.",
       features: ["Google Ads & Search 360", "Meta Conversion Tuning", "B2B LinkedIn Pipelines", "Server-Side Conversion Tracking"],
       metric: "6x",
       metricSub: "Average Verified ROAS"
     },
     {
-      title: "Full-Stack Web Engineering",
-      tagline: "High-Performance Infrastructure",
-      desc: "Bespoke web applications and ultra-fast headless storefronts built with modern styling frameworks. Optimized for rapid page loads, clean data flow, and secure API integrations.",
+      title: "Website Design & Development",
+      tagline: "High-Performance Websites Built for Speed, SEO & Conversions",
+      desc: "Our Website Design & Development services focus on creating fast, responsive, and SEO-friendly websites that deliver exceptional user experiences and drive business growth. We build custom business websites, eCommerce stores, landing pages, and web applications with modern technologies, mobile-first design, and secure development practices. Every website is optimized for speed, Core Web Vitals, search engine performance, and seamless API integrations to improve Google rankings, increase engagement, and maximize conversions.",
       features: ["Headless CMS Implementations", "Next.js & React Architectures", "Custom Enterprise Portals", "API & Webhook Integrations"],
       metric: "99/100",
       metricSub: "Mobile Performance Score"
     },
     {
-      title: "Growth Marketing",
-      tagline: "Scalable Distribution Loops",
-      desc: "Convert generic web traction into predictable revenue distribution channels. We combine systematic creative testing with telemetry pipelines to monitor and sustain user retention loops.",
+      title: "Social Media Marketing",
+      tagline: "Grow Your Brand with Strategic Social Media Marketing in the USA",
+      desc: "Our Social Media Marketing Services in the USA help businesses build brand awareness, engage their target audience, and generate high-quality leads across today's most powerful social platforms. We create data-driven strategies, compelling content, and high-converting ad campaigns for Facebook, Instagram, LinkedIn, TikTok, X (Twitter), Pinterest, and YouTube. From content creation and community management to paid social advertising and performance analytics, we help your brand increase reach, drive website traffic, boost customer engagement, and achieve measurable business growth.",
       features: ["A/B Creative Variant Testing", "Distribution Funnel Design", "Telemetry System Infrastructure", "Retention Mechanics Optimization"],
       metric: "+320%",
       metricSub: "Avg Growth Yield YoY"
     },
     {
-      title: "Brand Identity & Positioning",
-      tagline: "Memorable Brand Systems",
-      desc: "Strategic brand foundations designed to establish authority, differentiate your business, and create a consistent presence across every customer touchpoint.",
+      title: "E-Commerce Solutions",
+      tagline: "E-Commerce Website Development That Drives Sales & Business Growth",
+      desc: "Our E-Commerce Solutions help businesses launch, grow, and scale successful online stores with secure, high-performing, and SEO-friendly websites. We design and develop custom eCommerce websites on platforms like Shopify, WooCommerce, Wordpress, and custom solutions, optimized for speed, mobile responsiveness, and seamless user experience. From product management and secure payment gateway integration to inventory management, conversion optimization, and SEO, we create online stores that attract customers, increase sales, and maximize revenue.",
       features: [
         "Brand Strategy & Positioning",
         "Logo & Visual Identity Design",
@@ -70,32 +70,32 @@ const ServiceSection = () => {
       metric: "100+",
       metricSub: "Brands Elevated"
     },
-    {
-      title: "UI/UX Design",
-      tagline: "Conversion-First Experiences",
-      desc: "User-centered digital experiences crafted to improve engagement, increase trust, and maximize conversion opportunities across web and mobile platforms.",
-      features: [
-        "User Experience Research",
-        "Wireframing & Prototyping",
-        "Design Systems",
-        "Conversion-Focused Interfaces"
-      ],
-      metric: "+42%",
-      metricSub: "Avg UX Lift"
-    },
-    {
-      title: "E-Commerce Solutions",
-      tagline: "Revenue-Focused Commerce",
-      desc: "Scalable online stores engineered for seamless shopping experiences, operational efficiency, and sustainable revenue growth.",
-      features: [
-        "Shopify & WooCommerce",
-        "Payment Gateway Integration",
-        "Inventory & Order Systems",
-        "Conversion Optimization"
-      ],
-      metric: "8x",
-      metricSub: "Revenue Growth"
-    }
+    // {
+    //   title: "UI/UX Design",
+    //   tagline: "Conversion-First Experiences",
+    //   desc: "User-centered digital experiences crafted to improve engagement, increase trust, and maximize conversion opportunities across web and mobile platforms.",
+    //   features: [
+    //     "User Experience Research",
+    //     "Wireframing & Prototyping",
+    //     "Design Systems",
+    //     "Conversion-Focused Interfaces"
+    //   ],
+    //   metric: "+42%",
+    //   metricSub: "Avg UX Lift"
+    // },
+    // {
+    //   title: "E-Commerce Solutions",
+    //   tagline: "Revenue-Focused Commerce",
+    //   desc: "Scalable online stores engineered for seamless shopping experiences, operational efficiency, and sustainable revenue growth.",
+    //   features: [
+    //     "Shopify & WooCommerce",
+    //     "Payment Gateway Integration",
+    //     "Inventory & Order Systems",
+    //     "Conversion Optimization"
+    //   ],
+    //   metric: "8x",
+    //   metricSub: "Revenue Growth"
+    // }
   ];
 
   return (
@@ -115,7 +115,7 @@ const ServiceSection = () => {
           </div>
           <div className="md:col-span-7 border-t md:border-t-0 md:border-l border-[#E2E8F0] pt-4 md:pt-0 md:pl-8">
             <p className="text-[#64748B] text-sm md:text-base font-normal leading-relaxed">
-              Rigorous technical optimization, direct-response performance marketing systems, and high-trust engineering infrastructure custom built for enterprise scalability and predictable revenue growth.
+              We offer complete <strong>Digital Marketing Services</strong> designed to help businesses increase online visibility, improve Google rankings, and generate high-quality leads. Our expertise includes <strong>Search Engine Optimization (SEO), Local SEO, Social Media Marketing (SMM), Google Ads (PPC), Meta Ads, Website Design & Development, Content Marketing, Branding, and Performance Marketing</strong>. Every strategy is powered by data, advanced analytics, and continuous optimization to maximize ROI, increase website traffic, and deliver sustainable business growth.
             </p>
           </div>
         </div>

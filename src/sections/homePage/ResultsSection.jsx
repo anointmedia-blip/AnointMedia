@@ -46,11 +46,11 @@ const ResultsSection = () => {
         <div className="text-center mb-16 max-w-2xl">
           <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00B4AF] block mb-3">Performance Metrics</span>
           <h2 className="text-slate-900 text-3xl md:text-4xl font-black tracking-tight leading-none uppercase">
-            Results-Driven Agency
+Results-Driven Digital Marketing Agency
           </h2>
           <div className="w-8 h-[2px] bg-slate-300 mx-auto mt-4 mb-4" />
           <p className="max-w-xl mx-auto text-slate-500 font-normal text-sm sm:text-base leading-relaxed">
-            We let the numbers do the talking. Real tracking, continuous optimization, transparent outcomes.
+            Every click, lead, and conversion matters. Our data-driven approach combines SEO, paid advertising, website analytics, and continuous optimization to help businesses improve Google rankings, attract the right audience, and achieve sustainable business growth. 
           </p>
         </div>
 

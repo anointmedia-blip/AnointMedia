@@ -78,18 +78,11 @@ const WhoWeAreSection = () => {
         <div className="lg:col-span-7 flex flex-col items-start justify-center space-y-8 lg:mt-2">
           <motion.div variants={itemVariants} className="space-y-5">
             <p className="text-lg sm:text-xl text-slate-800 font-semibold tracking-wide leading-relaxed">
-              With 14+ years in the industry and a team of 200+ specialists, we
-              know what it takes to grow a business online.
+              Your Trusted Digital Marketing Company for Business Growth
             </p>
 
             <p className="text-base text-slate-600 font-normal leading-relaxed">
-              Our people work every day across SEO, paid advertising, social
-              media, and web design for clients running clinics, online stores,
-              law firms, hotels, and real estate businesses. We use AI and live
-              data to build strategies around what your customers are actually
-              searching for, not just what looks good on paper. Every plan is
-              built around specific goals for clients trusting us across India,
-              the US, UK, and Canada.
+              At We Promote, we help businesses strengthen their online presence through Search Engine Optimization (SEO), Social Media Marketing, Google Ads (PPC), Website Development, Content Marketing, Branding, and Performance Marketing. Our team creates data-driven strategies powered by market research, AI insights, and customer search behavior to improve Google rankings, increase website traffic, generate high-quality leads, and maximize ROI. Whether you're a startup, local business, or enterprise in industries like healthcare, real estate, hospitality, eCommerce, education, or professional services, we deliver customized digital marketing solutions that drive measurable growth and long-term success. 
             </p>
           </motion.div>
 

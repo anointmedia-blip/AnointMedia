@@ -6,45 +6,45 @@ const FAQsection = () => {
 
   const faqData = [
     {
-      question: "What services does We Promote provide?",
+      question: "What digital marketing services does We Promote offer?",
       answer:
-        "We help businesses grow through website design and development, SEO, Google Ads, digital marketing, branding, UI/UX design, and conversion-focused optimization. Whether you're launching a new business or scaling an existing one, we build solutions tailored to your goals.",
+        "We Promote is a full-service digital marketing agency in Texas, USA offering website design and development, SEO services, Google Ads (PPC) management, social media marketing, branding, UI/UX design, content marketing, local SEO, eCommerce development, and conversion rate optimization (CRO). We create customized digital marketing strategies that help businesses improve Google rankings, increase website traffic, generate qualified leads, and grow revenue. Whether you're a startup, small business, or enterprise, our data-driven solutions are designed to deliver measurable results and long-term business growth.",
     },
     {
       question:
         "Do you work with local businesses and service-based companies?",
       answer:
-        "Yes. We've worked with businesses across industries including hotels, modular kitchen brands, granite and stone suppliers, healthcare providers, professional services, and other local businesses. Every strategy is customized based on your market, audience, and objectives.",
+        " Yes. We specialize in helping local businesses, service-based companies, startups, small businesses, and growing enterprises across the USA. As a trusted digital marketing agency in Texas, USA, we work with industries including healthcare, hospitality, home services, legal, real estate, construction, eCommerce, restaurants, professional services, and more. Our customized SEO, website development, Google Ads, social media marketing, and digital marketing strategies are tailored to your industry, target audience, and business goals, helping you increase online visibility, generate qualified leads, and grow your business.",
     },
     {
-      question: "How long does it take to complete a website project?",
+      question: "How long does it take to complete a website development project?",
       answer:
-        "Project timelines depend on scope and complexity. Most business websites are completed within 2–6 weeks, while larger custom platforms may require additional time for planning, development, integrations, and testing.",
+        " The timeline for a website development project depends on your business goals, website size, and required features. Most business websites are completed within 2–6 weeks, while custom website development, eCommerce websites, and enterprise platforms may take 6–12 weeks or more. As a trusted website development company in Texas, USA, we follow a structured process that includes planning, UI/UX design, website development, SEO optimization, testing, and launch to ensure your website is fast, secure, mobile-friendly, and built for long-term business growth.",
     },
     {
-      question: "Can you improve my Google rankings?",
+      question: "How can your SEO services help my business rank higher on Google?",
       answer:
-        "Yes. Our SEO process focuses on technical optimization, content strategy, local search visibility, and long-term authority building. SEO is a long-term investment, but it remains one of the most effective ways to generate qualified organic traffic.",
+        " Our SEO services in the USA are designed to improve your website's visibility, increase organic traffic, and help your business rank higher on Google. We use a data-driven approach that includes technical SEO, on-page SEO, local SEO, keyword research, content optimization, link building, and performance monitoring to improve search engine rankings. As a trusted SEO agency in the USA, we create long-term strategies that attract qualified leads, increase website traffic, and deliver sustainable business growth. While SEO results typically take 3–6 months, it remains one of the most effective digital marketing investments for generating consistent, high-quality organic traffic and leads.",
     },
     {
-      question: "Do you manage Google Ads and paid marketing campaigns?",
+      question: "Does We Promote provide Google Ads management and PPC services in Texas, USA?",
       answer:
-        "Absolutely. We create, manage, and optimize Google Ads campaigns designed to increase visibility, generate qualified leads, and maximize return on ad spend through continuous testing and performance analysis.",
+        " Yes. We Promote is a trusted Google Ads management company in the USA, providing end-to-end Google Ads (PPC) management services for businesses of all sizes. Our team creates, manages, and continuously optimizes high-performing Google Ads campaigns that increase brand visibility, drive qualified leads, and maximize return on ad spend (ROAS). From keyword research and ad copy creation to audience targeting, conversion tracking, A/B testing, and campaign optimization, We Promote delivers data-driven PPC strategies that help businesses achieve measurable growth, increase sales, and generate more revenue across the USA.",
     },
     {
-      question: "Will my website be mobile-friendly and fast?",
+      question: "Does We Promote build mobile-friendly and SEO-optimized websites?",
       answer:
-        "Every website we build is fully responsive, optimized for speed, and designed to deliver a seamless experience across desktop, tablet, and mobile devices.",
+        "Yes. We Promote specializes in building mobile-friendly, fast-loading, and SEO-optimized websites that deliver an exceptional user experience on desktops, tablets, and smartphones. Our website development services in Texas, USA follow Google's Core Web Vitals best practices, ensuring faster loading speeds, responsive design, secure performance, and improved search engine rankings. Every website is designed to enhance user engagement, increase conversions, and help businesses grow their online presence with a high-performance website built for long-term success.",
     },
     {
-      question: "Do you offer ongoing support after launch?",
+      question: "Does We Promote provide website maintenance and ongoing SEO support?",
       answer:
-        "Yes. We provide ongoing maintenance, updates, SEO support, performance monitoring, content updates, and digital marketing assistance to ensure your online presence continues to grow.",
+        " Yes. We Promote provides comprehensive website maintenance, ongoing SEO support, and digital marketing services in Texas, USA to keep your website secure, updated, and performing at its best. Our team offers regular website updates, security monitoring, speed optimization, content updates, technical SEO, performance tracking, and continuous optimization to improve Google rankings and user experience. With We Promote's website maintenance services in the USA, your business benefits from reliable support, enhanced website performance, increased online visibility, and long-term digital growth.",
     },
     {
-      question: "How do I get started?",
+      question: "How can I get started with We Promote's digital marketing and web development services?",
       answer:
-        "Simply reach out through our contact form, email, or phone. We'll schedule a consultation, understand your business goals, and recommend the most effective strategy for your growth.",
+        "Getting started with We Promote is simple. Contact us through our website, phone, or email to schedule a free consultation with our experts. We'll discuss your business goals, evaluate your current online presence, and recommend the best website development, SEO, Google Ads, and digital marketing services tailored to your needs. Whether you're launching a new business or looking to grow an existing one, We Promote creates customized strategies that help you increase website traffic, generate qualified leads, improve Google rankings, and achieve long-term business growth across the USA.",
     },
   ];
 

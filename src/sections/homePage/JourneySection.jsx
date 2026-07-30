@@ -8,8 +8,8 @@ const Journey = () => {
     {
       num: "01",
       title: "Discover & Understand",
-      tagline: "Understanding Your Business",
-      desc: "We start by understanding your goals, challenges, audience, and opportunities to build a clear roadmap for growth.",
+      tagline: "Understanding Your Business Goals for Digital Growth",
+      desc: "Every successful digital marketing strategy begins with understanding your business. We analyze your goals, target audience, industry, competitors, and current online presence to identify growth opportunities. Through in-depth market research, customer insights, and data analysis, we create a customized digital marketing roadmap that aligns with your business objectives, helping you increase brand visibility, generate qualified leads, and achieve long-term success.",
       details: [
         { label: "Focus", value: "Business Goals" },
         { label: "Research", value: "Market Insights" },
@@ -19,8 +19,8 @@ const Journey = () => {
     {
       num: "02",
       title: "Plan & Strategize",
-      tagline: "Building The Right Approach",
-      desc: "Every successful project starts with a strong strategy. We define priorities, identify opportunities, and create a roadmap for execution.",
+      tagline: "Creating a Data-Driven Digital Marketing Strategy",
+      desc: "A well-planned strategy is the foundation of online success. We develop customized digital marketing strategies based on your business goals, target audience, market trends, and competitor analysis. Our team identifies the best opportunities across SEO, Social Media Marketing, Google Ads, Content Marketing, and Website Development to create a results-driven roadmap. Every strategy is designed to increase online visibility, drive qualified traffic, generate leads, and maximize your return on investment (ROI).",
       details: [
         { label: "Focus", value: "Strategy" },
         { label: "Approach", value: "Data-Driven" },
@@ -30,8 +30,8 @@ const Journey = () => {
     {
       num: "03",
       title: "Create & Execute",
-      tagline: "Bringing Ideas To Life",
-      desc: "From branding and design to development and marketing, we transform strategy into meaningful experiences and measurable results.",
+      tagline: "Turning Strategy into Measurable Digital Success",
+      desc: "We bring your digital strategy to life with creative execution and data-driven marketing. From website design and development to SEO, Social Media Marketing, Google Ads, content creation, branding, and performance marketing, our team delivers solutions that engage your audience and drive real business results. Every campaign is optimized to increase brand awareness, improve Google rankings, generate qualified leads, boost conversions, and support long-term business growth.",
       details: [
         { label: "Focus", value: "Execution" },
         { label: "Services", value: "End-to-End" },
@@ -41,8 +41,8 @@ const Journey = () => {
     {
       num: "04",
       title: "Optimize & Scale",
-      tagline: "Continuous Improvement",
-      desc: "We monitor performance, refine strategies, and uncover new opportunities to help your business grow sustainably over time.",
+      tagline: "Scale Smarter, Grow Faster ",
+      desc: "Our data-driven optimization strategies continuously improve your digital marketing performance, increase conversions, and maximize ROI. We analyze campaign results, refine SEO, PPC, and marketing strategies, and identify new growth opportunities to help your business achieve sustainable long-term success. With ongoing performance monitoring and strategic improvements, we ensure your brand stays ahead of the competition and continues to grow in the U.S. market.",
       details: [
         { label: "Focus", value: "Growth" },
         { label: "Method", value: "Optimization" },
