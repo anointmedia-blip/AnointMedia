@@ -55,7 +55,7 @@ const Testimonials = () => {
       <div className="max-w-[1320px] mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20 max-w-3xl mx-auto">
-          <span className="text-[#00B4AF] text-xs uppercase tracking-[0.25em] font-semibold">
+          <span className="text-[#E4B72A] text-xs uppercase tracking-[0.25em] font-semibold">
             Testimonials
           </span>
 
@@ -66,7 +66,7 @@ const Testimonials = () => {
           </h2>
 
           <p className="mt-6 text-slate-500 text-lg leading-relaxed">
-            Real feedback from brands that partnered with We Promote
+            Real feedback from brands that partnered with Anoint Media
             to grow their online presence and generate measurable
             results.
           </p>
@@ -100,7 +100,7 @@ const Testimonials = () => {
                 min-h-[320px]
                 transition-all
                 duration-300
-                hover:border-[#00B4AF]/20
+                hover:border-[#E4B72A]/20
                 hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)]
               "
             >

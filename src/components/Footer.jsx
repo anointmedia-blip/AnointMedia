@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logo.png";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const Footer = () => {
@@ -125,7 +125,7 @@ const Footer = () => {
           <div className="md:col-span-5 flex flex-col items-start pr-0 lg:pr-12">
             <img
               src={logo}
-              alt="We Promote"
+              alt="Anoint Media"
               className="h-25 object-contain mb-8"
             />
             <p className="text-[#182f59]/70 font-medium text-[15px] leading-relaxed max-w-sm mb-8">
@@ -211,12 +211,12 @@ const Footer = () => {
                 (906) 970-6661
               </motion.a>
               <motion.a
-                href="mailto:sales@wepromote.us"
+                href="mailto:anointmedia@gmail.com"
                 whileHover={{ x: 4 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
                 className="footer-brand-link text-[15px]"
               >
-                sales@wepromote.us
+                anointmedia@gmail.com
               </motion.a>
               <p className="text-[#182f59]/60 text-xs font-medium leading-relaxed pt-2">
                 Deployments actively maintained across USA, Canada, UAE, UK, and
@@ -231,7 +231,7 @@ const Footer = () => {
           <div className="flex items-center gap-2.5">
             <span className="w-1.5 h-1.5 rounded-full bg-[#4cb1a1]" />
             <p className="text-[#182f59]/50 text-xs font-bold uppercase tracking-wider">
-              © {new Date().getFullYear()} We Promote. All rights reserved.
+              © {new Date().getFullYear()} Anoint Media. All rights reserved.
             </p>
           </div>
 

@@ -60,9 +60,9 @@ const ProcessSection = () => {
       <div className="max-w-4xl mx-auto">
         
         <div className="space-y-2 mb-14 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 px-2.5 py-0.5 bg-[#00B4AF]/10 border border-[#00B4AF]/20 rounded-md">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#00B4AF]" />
-            <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#00B4AF]">Deployment Workflow</span>
+          <div className="inline-flex items-center gap-2 px-2.5 py-0.5 bg-[#E4B72A]/10 border border-[#E4B72A]/20 rounded-md">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#E4B72A]" />
+            <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#E4B72A]">Deployment Workflow</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-[#0F172A]">
             How we scale your digital presence.
@@ -80,7 +80,7 @@ const ProcessSection = () => {
               >
                 <div className="w-full h-[3px] bg-[#E2E8F0] rounded-full relative overflow-hidden mb-3">
                   <motion.div 
-                    className="absolute inset-0 bg-[#00B4AF]"
+                    className="absolute inset-0 bg-[#E4B72A]"
                     initial={false}
                     animate={{ x: isActive ? "0%" : "-100%" }}
                     transition={{ duration: 0.25, ease: "easeInOut" }}
@@ -88,7 +88,7 @@ const ProcessSection = () => {
                 </div>
 
                 <div className="space-y-0.5 pl-0.5">
-                  <span className={`block font-mono text-[10px] font-bold tracking-wider transition-colors ${isActive ? 'text-[#00B4AF]' : 'text-[#94A3B8]'}`}>
+                  <span className={`block font-mono text-[10px] font-bold tracking-wider transition-colors ${isActive ? 'text-[#E4B72A]' : 'text-[#94A3B8]'}`}>
                     PHASE {step.id}
                   </span>
                   <span className={`block text-sm font-bold tracking-tight transition-colors ${isActive ? 'text-[#0F172A]' : 'text-[#64748B] group-hover:text-[#334155]'}`}>
@@ -133,7 +133,7 @@ const ProcessSection = () => {
                 </div>
 
                 <div className="md:pt-6">
-                  <button onClick={handleConnectClick} className="w-full md:w-auto bg-[#00B4AF] hover:bg-[#037571] active:scale-[0.99] text-white text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-lg transition-all duration-150 shadow-xs">
+                  <button onClick={handleConnectClick} className="w-full md:w-auto bg-[#E4B72A] hover:bg-[#C59715] active:scale-[0.99] text-white text-xs font-bold uppercase tracking-wider px-5 py-3 rounded-lg transition-all duration-150 shadow-xs">
                     Initiate Framework
                   </button>
                 </div>

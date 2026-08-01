@@ -61,7 +61,7 @@ const WhoWeAreSection = () => {
             whileInView={{ width: 48 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="h-[4px] bg-[#00B4AF] mb-6 rounded-full"
+            className="h-[4px] bg-[#E4B72A] mb-6 rounded-full"
           />
 
           <motion.h2
@@ -69,7 +69,7 @@ const WhoWeAreSection = () => {
             className="text-slate-900 text-5xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.05] flex flex-col uppercase"
           >
             <span>Who</span>
-            <span className="text-[#00B4AF] pl-6 sm:pl-8">We</span>
+            <span className="text-[#E4B72A] pl-6 sm:pl-8">We</span>
             <span>Are.</span>
           </motion.h2>
         </div>
@@ -82,7 +82,7 @@ const WhoWeAreSection = () => {
             </p>
 
             <p className="text-base text-slate-600 font-normal leading-relaxed">
-              At We Promote, we help businesses strengthen their online presence through Search Engine Optimization (SEO), Social Media Marketing, Google Ads (PPC), Website Development, Content Marketing, Branding, and Performance Marketing. Our team creates data-driven strategies powered by market research, AI insights, and customer search behavior to improve Google rankings, increase website traffic, generate high-quality leads, and maximize ROI. Whether you're a startup, local business, or enterprise in industries like healthcare, real estate, hospitality, eCommerce, education, or professional services, we deliver customized digital marketing solutions that drive measurable growth and long-term success. 
+              At Anoint Media, we help businesses strengthen their online presence through Search Engine Optimization (SEO), Social Media Marketing, Google Ads (PPC), Website Development, Content Marketing, Branding, and Performance Marketing. Our team creates data-driven strategies powered by market research, AI insights, and customer search behavior to improve Google rankings, increase website traffic, generate high-quality leads, and maximize ROI. Whether you're a startup, local business, or enterprise in industries like healthcare, real estate, hospitality, eCommerce, education, or professional services, we deliver customized digital marketing solutions that drive measurable growth and long-term success.
             </p>
           </motion.div>
 
@@ -107,7 +107,7 @@ const WhoWeAreSection = () => {
               onClick={handleConnectClick}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-[#00B4AF] hover:bg-[#de910b] text-white font-bold text-xs tracking-widest px-8 py-4 rounded-lg shadow-sm hover:shadow-md uppercase transition-all duration-200"
+              className="bg-[#E4B72A] hover:bg-[#CD9D20] text-white font-bold text-xs tracking-widest px-8 py-4 rounded-lg shadow-sm hover:shadow-md uppercase transition-all duration-200"
             >
               Know More About Us
             </motion.button>

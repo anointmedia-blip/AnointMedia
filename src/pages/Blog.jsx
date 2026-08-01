@@ -222,7 +222,7 @@ export default function BlogSection() {
               {/* Header Block */}
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter text-[#0F2C59] mb-4 leading-[0.95]">
-                  Our Latest <span className="text-[#00B4AF]">Blogs.</span>
+                  Our Latest <span className="text-[#E4B72A]">Blogs.</span>
                 </h2>
                 <p className="text-[13px] text-slate-500 max-w-xl mx-auto font-semibold leading-relaxed">
                   Thought leadership, deep dives, and digital marketing
@@ -250,7 +250,7 @@ export default function BlogSection() {
                         {isActive && (
                           <motion.div
                             layoutId="activePillBubble"
-                            className="absolute inset-0 bg-[#00B4AF] z-10 rounded-full"
+                            className="absolute inset-0 bg-[#E4B72A] z-10 rounded-full"
                             transition={{
                               type: "spring",
                               stiffness: 380,
@@ -293,7 +293,7 @@ export default function BlogSection() {
 
                         {/* Floating Absolute Tag */}
                         <div className="absolute top-4 left-4 z-20">
-                          <span className="text-[9px] tracking-widest font-black uppercase text-white bg-[#00B4AF] px-3 py-1.5">
+                          <span className="text-[9px] tracking-widest font-black uppercase text-white bg-[#E4B72A] px-3 py-1.5">
                             {blog.tag}
                           </span>
                         </div>
@@ -302,7 +302,7 @@ export default function BlogSection() {
                       {/* Content Block */}
                       <div className="p-7 flex-1 flex flex-col justify-between bg-[#FDFDFC] relative z-20">
                         <div>
-                          <h3 className="text-[15px] font-black uppercase tracking-tight text-[#0F2C59] group-hover:text-[#00B4AF] transition-colors duration-300 line-clamp-2 mb-3.5 leading-tight">
+                          <h3 className="text-[15px] font-black uppercase tracking-tight text-[#0F2C59] group-hover:text-[#E4B72A] transition-colors duration-300 line-clamp-2 mb-3.5 leading-tight">
                             {blog.title}
                           </h3>
                           <p className="text-[12px] text-slate-400 font-semibold leading-relaxed line-clamp-3 mb-6">
@@ -312,9 +312,9 @@ export default function BlogSection() {
 
                         {/* Operational Footer Bar */}
                         <div className="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
-                          <div className="flex items-center gap-1.5 text-[10px] font-black text-[#0F2C59] group-hover:text-[#00B4AF] transition-colors duration-300 uppercase tracking-widest">
+                          <div className="flex items-center gap-1.5 text-[10px] font-black text-[#0F2C59] group-hover:text-[#E4B72A] transition-colors duration-300 uppercase tracking-widest">
                             <span>Explore</span>
-                            <span className="text-xs transform transition-transform duration-300 group-hover:translate-x-1.5 text-[#00B4AF]">
+                            <span className="text-xs transform transition-transform duration-300 group-hover:translate-x-1.5 text-[#E4B72A]">
                               →
                             </span>
                           </div>
@@ -370,7 +370,7 @@ export default function BlogSection() {
               {/* Internal Dynamic Nav Trigger */}
               <button
                 onClick={handleBackToGrid}
-                className="group inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[#0F2C59] hover:text-[#00B4AF] transition-colors duration-300 mb-12"
+                className="group inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[#0F2C59] hover:text-[#E4B72A] transition-colors duration-300 mb-12"
               >
                 <span className="text-xs transform transition-transform duration-300 group-hover:-translate-x-1">
                   ←
@@ -381,7 +381,7 @@ export default function BlogSection() {
               {/* Article Structural Metadata Header */}
               <header className="mb-12">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-[10px] font-black uppercase tracking-[0.15em] bg-[#F8F7FF] text-[#00B4AF] border border-slate-100 px-2.5 py-1">
+                  <span className="text-[10px] font-black uppercase tracking-[0.15em] bg-[#F8F7FF] text-[#E4B72A] border border-slate-100 px-2.5 py-1">
                     {currentBlogData.category}
                   </span>
                   <span className="w-1 h-1 rounded-full bg-slate-300" />

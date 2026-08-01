@@ -88,7 +88,7 @@ const capabilities = [
   return (
 <section className="relative overflow-hidden pt-12 lg:pt-16 pb-0 bg-white">
       {/* Background Glow */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(0,184,217,0.12),transparent_40%)]" />
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(228,183,42,0.12),transparent_40%)]" />
 
       <div className="max-w-[1320px] mx-auto px-6">
 <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -102,9 +102,9 @@ const capabilities = [
             {/* Tagline */}
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#00B4AF] bg-cyan-50 text-sm font-semibold text-[#00B4AF] mb-8 shadow-sm"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#E4B72A] bg-amber-50 text-sm font-semibold text-[#E4B72A] mb-8 shadow-sm"
             >
-              <span className="w-2 h-2 rounded-full bg-[#00B4AF] animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-[#E4B72A] animate-pulse" />
               Trusted by 500+ Growing Businesses
             </motion.div>
 
@@ -118,7 +118,7 @@ Helping Businesses
 
 
               <br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-950 via-slate-800 to-[#00B4AF]">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-slate-950 via-slate-800 to-[#E4B72A]">
              Grow Without 
               </span>
               <br />
@@ -141,7 +141,7 @@ Limits
               variants={itemVariants}
               className="flex flex-wrap gap-4 mt-10"
             >
-              <button onClick={handleConnectClick} className="px-8 py-4 rounded-full bg-gradient-to-r from-[#69ede8] to-[#00B4AF] text-white font-semibold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-105 active:scale-95 transition-all duration-300">
+              <button onClick={handleConnectClick} className="px-8 py-4 rounded-full bg-gradient-to-r from-[#F4D35E] to-[#E4B72A] text-white font-semibold shadow-lg shadow-amber-500/20 hover:shadow-amber-500/40 hover:scale-105 active:scale-95 transition-all duration-300">
                 Let's Talk
               </button>
 
@@ -156,7 +156,7 @@ Limits
               className="mt-16 flex flex-wrap items-center gap-y-4 gap-x-8 px-6 py-4 bg-slate-50/60 rounded-2xl border border-slate-100/80 w-fit backdrop-blur-sm"
             >
               {/* Left Label */}
-              <div className="text-xs font-bold text-[#00B4AF] uppercase tracking-widest border-r border-slate-200/60 pr-6 hidden sm:block">
+              <div className="text-xs font-bold text-[#E4B72A] uppercase tracking-widest border-r border-slate-200/60 pr-6 hidden sm:block">
                 Our Impact
               </div>
 
@@ -171,7 +171,7 @@ Limits
                     key={idx}
                     className="flex items-baseline gap-x-1.5 cursor-default group"
                   >
-                    <span className="text-xl lg:text-2xl font-black text-slate-900 tracking-tight transition-colors duration-200 group-hover:text-[#00B4AF]">
+                    <span className="text-xl lg:text-2xl font-black text-slate-900 tracking-tight transition-colors duration-200 group-hover:text-[#E4B72A]">
                       {stat.value}
                     </span>
                     <span className="text-xs font-semibold text-slate-500 whitespace-nowrap">
@@ -201,7 +201,7 @@ Limits
       h-[600px]
       rounded-full
       bg-gradient-to-r
-      from-cyan-200/30
+      from-amber-200/30
       to-blue-200/20
       blur-[140px]
     "
@@ -321,7 +321,7 @@ Limits
             >
               <p className="text-sm text-slate-500">Campaign Growth</p>
 
-              <h3 className="text-[52px] leading-none font-black text-[#00B4AF] mt-2">
+              <h3 className="text-[52px] leading-none font-black text-[#E4B72A] mt-2">
                 +327%
               </h3>
 
@@ -334,7 +334,7 @@ Limits
                   initial={{ width: 0 }}
                   animate={{ width: "78%" }}
                   transition={{ duration: 1.5 }}
-                  className="h-full bg-gradient-to-r from-cyan-400 to-[#00B4AF]"
+                  className="h-full bg-gradient-to-r from-amber-400 to-[#E4B72A]"
                 />
               </div>
             </motion.div>
@@ -392,7 +392,7 @@ Limits
       w-5
       h-5
       rounded-full
-      bg-[#00B4AF]
+      bg-[#E4B72A]
     "
             />
           </div>
@@ -419,7 +419,7 @@ Limits
                       {item}
                     </span>
 
-                    <div className="w-2 h-2 rounded-full bg-[#00B4AF] ml-10" />
+                    <div className="w-2 h-2 rounded-full bg-[#E4B72A] ml-10" />
                   </div>
                 ),
               )}

@@ -58,9 +58,9 @@ const Journey = () => {
         
         <div className="w-full border-b border-[#E2E8F0] pb-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
           <div className="lg:col-span-7 space-y-4">
-            <div className="inline-flex items-center gap-2 px-2.5 py-0.5 bg-[#00B4AF]/10 border border-[#00B4AF] rounded-md">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00B4AF]" />
-              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#00B4AF]">
+            <div className="inline-flex items-center gap-2 px-2.5 py-0.5 bg-[#E4B72A]/10 border border-[#E4B72A] rounded-md">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E4B72A]" />
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#E4B72A]">
                 Operational Execution
               </span>
             </div>
@@ -86,18 +86,18 @@ const Journey = () => {
                   onClick={() => setActiveIndex(idx)}
                   className={`w-full text-left p-6 rounded-xl border transition-all duration-300 relative overflow-hidden flex items-start gap-4 focus:outline-none ${
                     isActive
-                      ? "bg-[#F8FAFC] border-[#00B4AF] shadow-[0_4px_20px_rgba(245,158,11,0.04)]"
+                      ? "bg-[#F8FAFC] border-[#E4B72A] shadow-[0_4px_20px_rgba(245,158,11,0.04)]"
                       : "bg-white border-[#E2E8F0] hover:border-[#CBD5E1]"
                   }`}
                 >
                   <div
-                    className={`absolute left-0 top-0 bottom-0 w-[3px] bg-[#00B4AF] transition-transform duration-300 origin-top ${isActive ? "scale-y-100" : "scale-y-0"}`}
+                    className={`absolute left-0 top-0 bottom-0 w-[3px] bg-[#E4B72A] transition-transform duration-300 origin-top ${isActive ? "scale-y-100" : "scale-y-0"}`}
                   />
 
                   <span
                     className={`text-xs font-mono font-bold px-2 py-0.5 rounded border transition-colors duration-200 ${
                       isActive
-                        ? "bg-[#00B4AF]/10 text-[#00B4AF]/70 border-[#00B4AF]"
+                        ? "bg-[#E4B72A]/10 text-[#E4B72A]/70 border-[#E4B72A]"
                         : "bg-[#F8FAFC] text-[#64748B] border-[#E2E8F0]"
                     }`}
                   >
@@ -130,7 +130,7 @@ const Journey = () => {
                 className="space-y-8 relative z-10 flex-1 flex flex-col justify-between"
               >
                 <div className="space-y-4">
-                  <div className="text-[10px] font-mono font-bold text-[#00B4AF] uppercase tracking-widest">
+                  <div className="text-[10px] font-mono font-bold text-[#E4B72A] uppercase tracking-widest">
                     // Deployment Vector Focus
                   </div>
                   <h4 className="text-2xl font-extrabold tracking-tight text-[#0F172A]">

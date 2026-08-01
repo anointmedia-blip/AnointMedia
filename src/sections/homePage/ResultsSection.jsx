@@ -44,7 +44,7 @@ const ResultsSection = () => {
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         
         <div className="text-center mb-16 max-w-2xl">
-          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00B4AF] block mb-3">Performance Metrics</span>
+          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#E4B72A] block mb-3">Performance Metrics</span>
           <h2 className="text-slate-900 text-3xl md:text-4xl font-black tracking-tight leading-none uppercase">
 Results-Driven Digital Marketing Agency
           </h2>
@@ -74,7 +74,7 @@ Results-Driven Digital Marketing Agency
                 {index + 1}
               </div>
 
-              <span className="text-[#00B4AF] text-4xl md:text-5xl font-black tracking-tight leading-none relative z-10 font-mono">
+              <span className="text-[#E4B72A] text-4xl md:text-5xl font-black tracking-tight leading-none relative z-10 font-mono">
                 {item.value}
               </span>
               

@@ -80,7 +80,7 @@ export default function PortfolioSection() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter text-[#0F2C59] mb-4 leading-[0.95]">
-            Selected <span className="text-[#00B4AF]">Works.</span>
+            Selected <span className="text-[#E4B72A]">Works.</span>
           </h2>
           <p className="text-[13px] text-slate-500 max-w-2xl mx-auto font-semibold leading-relaxed">
             A curated showcase of digital products, cloud architecture, and high-growth marketing strategies built to outperform market standards.
@@ -104,7 +104,7 @@ export default function PortfolioSection() {
                   {isActive && (
                     <motion.div
                       layoutId="activePortfolioPill"
-                      className="absolute inset-0 bg-[#00B4AF] z-10 rounded-full"
+                      className="absolute inset-0 bg-[#E4B72A] z-10 rounded-full"
                       transition={{ type: 'spring', stiffness: 380, damping: 32 }}
                     />
                   )}
@@ -157,12 +157,12 @@ export default function PortfolioSection() {
                 <div className="p-7 flex-1 flex flex-col justify-between bg-[#FDFDFC] relative z-20">
                   <div>
                     {/* Category Hook */}
-                    <span className="text-[10px] font-black text-[#00B4AF] uppercase tracking-[0.2em] block mb-2">
+                    <span className="text-[10px] font-black text-[#E4B72A] uppercase tracking-[0.2em] block mb-2">
                       {project.category}
                     </span>
                     
                     {/* Case Title */}
-                    <h3 className="text-[15px] font-black uppercase tracking-tight text-[#0F2C59] group-hover:text-[#00B4AF] transition-colors duration-300 mb-4 leading-tight">
+                    <h3 className="text-[15px] font-black uppercase tracking-tight text-[#0F2C59] group-hover:text-[#E4B72A] transition-colors duration-300 mb-4 leading-tight">
                       {project.title}
                     </h3>
 

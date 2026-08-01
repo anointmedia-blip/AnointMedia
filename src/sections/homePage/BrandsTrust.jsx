@@ -65,7 +65,7 @@ const BrandsTrust = () => {
         <div className="max-w-2xl mx-auto text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-black tracking-tight text-[#0f172a]">
             The Brands That{" "}
-            <span className="text-[#00b4af]">Shaped Our Standards</span>
+            <span className="text-[#E4B72A]">Shaped Our Standards</span>
           </h2>
           <p className="mt-4 text-slate-500 text-[14px] md:text-[15px] font-medium leading-relaxed max-w-xl mx-auto">
             Built on lessons, insights, and experience gained from working

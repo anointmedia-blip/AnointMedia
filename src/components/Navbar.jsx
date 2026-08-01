@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import { HiMenuAlt3, HiX, HiChevronDown } from "react-icons/hi";
 import { useNavigate, Link } from "react-router-dom";
-import logoimg from "../assets/logo.jpeg";
+import logoimg from "../assets/logo.png";
 import { IoCall } from "react-icons/io5";
 
 const Navbar = () => {
@@ -18,25 +18,25 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleConnectClick = () => {
-  setMobileMenuOpen(false);
+    setMobileMenuOpen(false);
 
-  if (window.location.pathname === "/") {
-    const contactSection = document.getElementById("contact");
+    if (window.location.pathname === "/") {
+      const contactSection = document.getElementById("contact");
 
-    if (contactSection) {
-      contactSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
+      if (contactSection) {
+        contactSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    } else {
+      navigate("/", {
+        state: {
+          scrollTo: "contact",
+        },
       });
     }
-  } else {
-    navigate("/", {
-      state: {
-        scrollTo: "contact",
-      },
-    });
-  }
-};
+  };
 
   // Structured Professional Service Data with Perfect Path Architectures mapping to App.jsx
   const serviceContent = {
@@ -115,7 +115,7 @@ const Navbar = () => {
       col1Title: "Website Design Services",
       col1Icon: (
         <svg
-          className="w-4 h-4 text-[#00b4af]"
+          className="w-4 h-4 text-[#E4B72A]"
           fill="none"
           stroke="currentColor"
           strokeWidth="2.5"
@@ -137,7 +137,7 @@ const Navbar = () => {
       col2Title: "Website Development Services",
       col2Icon: (
         <svg
-          className="w-4 h-4 text-[#00b4af]"
+          className="w-4 h-4 text-[#E4B72A]"
           fill="none"
           stroke="currentColor"
           strokeWidth="2.5"
@@ -192,16 +192,16 @@ const Navbar = () => {
         <div className="flex items-center gap-6">
           <a
             href="tel:+19069706661"
-            className="hover:text-[#00b4af] transition"
+            className="hover:text-[#E4B72A] transition"
           >
-            +1 (906) 970-6661
+            +91 98779 74161
           </a>
 
           <a
-            href="mailto:sales@wepromote.us"
-            className="hover:text-[#00b4af] transition"
+            href="mailto:anointmedia@gmail.com"
+            className="hover:text-[#E4B72A] transition"
           >
-            sales@wepromote.us
+            anointmedia@gmail.com
           </a>
         </div>
       </div>
@@ -219,16 +219,16 @@ const Navbar = () => {
           <img
             src={logoimg}
             alt="Logo"
-            className="h-20 lg:h-20 object-contain"
+            className="h-10 lg:h-10 object-contain"
           />
         </div>
-        
+
 
         {/* Desktop Anchor Navigation Link Tree */}
         <nav className="hidden lg:flex items-center space-x-7 xl:space-x-9 text-[13.5px] font-bold text-slate-700 tracking-wide">
           <Link
             to="/about-us"
-            className="hover:text-[#00b4af] transition-colors duration-200"
+            className="hover:text-[#E4B72A] transition-colors duration-200"
           >
             About
           </Link>
@@ -236,35 +236,35 @@ const Navbar = () => {
             className="relative h-[90px] flex items-center cursor-pointer"
             onMouseEnter={() => setActiveMenu("services")}
           >
-            
+
             <span
-              className={`transition-colors duration-200 ${activeMenu === "services" ? "text-[#00b4af]" : "hover:text-[#00b4af]"}`}
+              className={`transition-colors duration-200 ${activeMenu === "services" ? "text-[#E4B72A]" : "hover:text-[#E4B72A]"}`}
             >
               SERVICES
             </span>
             <HiChevronDown
-              className={`w-4 h-4 ml-1 transition-transform duration-200 ${activeMenu === "services" ? "rotate-180 text-[#00b4af]" : "text-slate-400"}`}
+              className={`w-4 h-4 ml-1 transition-transform duration-200 ${activeMenu === "services" ? "rotate-180 text-[#E4B72A]" : "text-slate-400"}`}
             />
           </div>
 
-          
 
-          
+
+
           <Link
             to="/blog"
-            className="hover:text-[#00b4af] transition-colors duration-200"
+            className="hover:text-[#E4B72A] transition-colors duration-200"
           >
             BLOG
           </Link>
           <Link
             to="/portfolio"
-            className="hover:text-[#00b4af] transition-colors duration-200"
+            className="hover:text-[#E4B72A] transition-colors duration-200"
           >
             PORTFOLIO
           </Link>
           <Link
             to="/testimonials"
-            className="hover:text-[#00b4af] transition-colors duration-200"
+            className="hover:text-[#E4B72A] transition-colors duration-200"
           >
             TESTIMONIALS
           </Link>
@@ -274,7 +274,7 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <button
             onClick={handleConnectClick}
-            className="bg-[#00b4af] hover:bg-[#009e99] text-white font-bold text-[13.5px] px-6 py-3 rounded-full flex items-center gap-2 transition duration-200 shadow-xs hover:shadow-md tracking-wider border border-[#00a39e]/20"
+            className="bg-[#E4B72A] hover:bg-[#CD9D20] text-white font-bold text-[13.5px] px-6 py-3 rounded-full flex items-center gap-2 transition duration-200 shadow-xs hover:shadow-md tracking-wider border border-[#CD9D20]/20"
           >
             <span>
               <IoCall />
@@ -287,13 +287,13 @@ const Navbar = () => {
         <div className="flex lg:hidden items-center gap-4">
           <button
             onClick={handleConnectClick}
-            className="bg-[#00b4af] text-white font-bold text-[12px] sm:text-[13px] px-4 py-2 rounded-full tracking-wider"
+            className="bg-[#E4B72A] text-white font-bold text-[12px] sm:text-[13px] px-4 py-2 rounded-full tracking-wider"
           >
             Consult
           </button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-slate-700 hover:text-[#00b4af] transition-colors p-1"
+            className="text-slate-700 hover:text-[#E4B72A] transition-colors p-1"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
@@ -325,11 +325,10 @@ const Navbar = () => {
                       key={tabName}
                       onMouseEnter={() => setActiveServiceTab(tabName)}
                       onClick={() => setActiveServiceTab(tabName)}
-                      className={`w-full text-left font-extrabold text-[12px] tracking-wider px-5 py-3.5 rounded-lg transition-all duration-200 ${
-                        isCurrent
-                          ? "bg-[#00b4af] text-white shadow-sm font-black"
-                          : "bg-white text-slate-600 hover:bg-white hover:text-[#00b4af] shadow-2xs"
-                      }`}
+                      className={`w-full text-left font-extrabold text-[12px] tracking-wider px-5 py-3.5 rounded-lg transition-all duration-200 ${isCurrent
+                        ? "bg-[#E4B72A] text-white shadow-sm font-black"
+                        : "bg-white text-slate-600 hover:bg-white hover:text-[#E4B72A] shadow-2xs"
+                        }`}
                     >
                       {tabName}
                     </button>
@@ -342,7 +341,7 @@ const Navbar = () => {
                 <div className="flex flex-col">
                   <div className="flex items-center gap-2 font-extrabold text-[14px] text-slate-900 mb-4 border-b border-slate-200/50 pb-2.5 tracking-wide">
                     {serviceContent[activeServiceTab].col1Icon || (
-                      <span className="w-1.5 h-1.5 bg-[#00b4af] rounded-full"></span>
+                      <span className="w-1.5 h-1.5 bg-[#E4B72A] rounded-full"></span>
                     )}
                     <h3>{serviceContent[activeServiceTab].col1Title}</h3>
                   </div>
@@ -352,7 +351,7 @@ const Navbar = () => {
                         <Link
                           to={item.path}
                           onClick={() => setActiveMenu(null)}
-                          className="flex items-center gap-2 text-[13px] text-slate-600 font-semibold cursor-pointer hover:text-[#00b4af] transition-colors duration-150"
+                          className="flex items-center gap-2 text-[13px] text-slate-600 font-semibold cursor-pointer hover:text-[#E4B72A] transition-colors duration-150"
                         >
                           <span className="w-1 h-1 bg-slate-400 rounded-full shrink-0"></span>
                           {item.label}
@@ -365,7 +364,7 @@ const Navbar = () => {
                 <div className="flex flex-col">
                   <div className="flex items-center gap-2 font-extrabold text-[14px] text-slate-900 mb-4 border-b border-slate-200/50 pb-2.5 tracking-wide">
                     {serviceContent[activeServiceTab].col2Icon || (
-                      <span className="w-1.5 h-1.5 bg-[#00b4af] rounded-full"></span>
+                      <span className="w-1.5 h-1.5 bg-[#E4B72A] rounded-full"></span>
                     )}
                     <h3>{serviceContent[activeServiceTab].col2Title}</h3>
                   </div>
@@ -375,7 +374,7 @@ const Navbar = () => {
                         <Link
                           to={item.path}
                           onClick={() => setActiveMenu(null)}
-                          className="flex items-center gap-2 text-[13px] text-slate-600 font-semibold cursor-pointer hover:text-[#00b4af] transition-colors duration-150"
+                          className="flex items-center gap-2 text-[13px] text-slate-600 font-semibold cursor-pointer hover:text-[#E4B72A] transition-colors duration-150"
                         >
                           <span className="w-1 h-1 bg-slate-400 rounded-full shrink-0"></span>
                           {item.label}
@@ -400,7 +399,7 @@ const Navbar = () => {
             transition={{ duration: 0.25, ease: "easeInOut" }}
             className="w-full bg-white border-t border-slate-100 lg:hidden overflow-hidden absolute left-0 right-0 top-[70px] shadow-2xl z-40"
           >
-            
+
             <div className="px-6 py-8 flex flex-col space-y-5 max-h-[85vh] overflow-y-auto">
               <Link
                 to="/about-us"
@@ -417,24 +416,24 @@ const Navbar = () => {
                 >
                   <span>Services</span>
                   <HiChevronDown
-                    className={`w-5 h-5 text-slate-500 transition-transform duration-200 ${mobileServicesOpen ? "rotate-180 text-[#00b4af]" : ""}`}
+                    className={`w-5 h-5 text-slate-500 transition-transform duration-200 ${mobileServicesOpen ? "rotate-180 text-[#E4B72A]" : ""}`}
                   />
                 </button>
 
-                
+
 
                 {mobileServicesOpen && (
-                  <div className="mt-4 pl-2 flex flex-col space-y-6 border-l-2 border-[#00b4af]/20">
+                  <div className="mt-4 pl-2 flex flex-col space-y-6 border-l-2 border-[#E4B72A]/20">
                     {Object.keys(serviceContent).map((tabKey) => (
                       <div key={tabKey} className="space-y-3">
-                        <h4 className="text-[11px] font-black tracking-widest text-[#00b4af] uppercase bg-[#00b4af]/5 px-2.5 py-1 rounded inline-block">
+                        <h4 className="text-[11px] font-black tracking-widest text-[#E4B72A] uppercase bg-[#E4B72A]/5 px-2.5 py-1 rounded inline-block">
                           {tabKey}
                         </h4>
-                        
+
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
                           <div>
-                            
+
                             <h5 className="text-[13px] font-bold text-slate-900 mb-2">
                               {serviceContent[tabKey].col1Title}
                             </h5>
@@ -445,7 +444,7 @@ const Navbar = () => {
                                     <Link
                                       to={subItem.path}
                                       onClick={() => setMobileMenuOpen(false)}
-                                      className="text-[12.5px] text-slate-600 font-medium hover:text-[#00b4af] transition-colors block py-0.5"
+                                      className="text-[12.5px] text-slate-600 font-medium hover:text-[#E4B72A] transition-colors block py-0.5"
                                     >
                                       • {subItem.label}
                                     </Link>
@@ -466,7 +465,7 @@ const Navbar = () => {
                                     <Link
                                       to={subItem.path}
                                       onClick={() => setMobileMenuOpen(false)}
-                                      className="text-[12.5px] text-slate-600 font-medium hover:text-[#00b4af] transition-colors block py-0.5"
+                                      className="text-[12.5px] text-slate-600 font-medium hover:text-[#E4B72A] transition-colors block py-0.5"
                                     >
                                       • {subItem.label}
                                     </Link>
@@ -484,7 +483,7 @@ const Navbar = () => {
 
 
               {/* STATIC MOBILE LINK ANCHORS */}
-              
+
               <Link
                 to="/blog"
                 onClick={() => setMobileMenuOpen(false)}
@@ -492,7 +491,7 @@ const Navbar = () => {
               >
                 BLOG
               </Link>
-              
+
               <Link
                 to="/portfolio"
                 onClick={() => setMobileMenuOpen(false)}
@@ -522,7 +521,7 @@ const Navbar = () => {
                     href="tel:+14192621977"
                     className="text-[13.5px] font-bold text-slate-700"
                   >
-                    +1 (906) 970-6661
+                    +91 98779 74161
                   </a>
                 </div>
               </div>

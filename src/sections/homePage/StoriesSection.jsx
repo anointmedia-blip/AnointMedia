@@ -67,7 +67,7 @@ const StoriesSection = () => {
         
         <div className="mb-20 text-center md:text-left">
           <div className="space-y-3">
-            <span className="text-sm font-semibold text-[#00B4AF] uppercase tracking-wider">
+            <span className="text-sm font-semibold text-[#E4B72A] uppercase tracking-wider">
               Featured Work
             </span>
 
@@ -128,7 +128,7 @@ Transforming Brands Through Digital Excellence.
                     </div>
 
                     <h3 className="text-2xl font-extrabold text-[#0F172A] tracking-tight leading-snug flex items-start gap-2">
-                      <span className="group-hover:text-[#00B4AF] transition-colors duration-200">
+                      <span className="group-hover:text-[#E4B72A] transition-colors duration-200">
                         {story.title}
                       </span>
                     </h3>
@@ -144,7 +144,7 @@ Transforming Brands Through Digital Excellence.
                         <span className="text-[10px] font-mono uppercase tracking-wider text-[#94A3B8] block">
                           {metric.label}
                         </span>
-                        <span className="text-xl md:text-2xl font-black text-[#00B4AF] tracking-tight block">
+                        <span className="text-xl md:text-2xl font-black text-[#E4B72A] tracking-tight block">
                           {metric.value}
                         </span>
                       </div>

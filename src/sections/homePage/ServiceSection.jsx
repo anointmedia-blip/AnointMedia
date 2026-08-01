@@ -105,9 +105,9 @@ const ServiceSection = () => {
         
         <div className="w-full bg-white border border-[#E2E8F0] rounded-xl p-8 md:p-10 grid grid-cols-1 md:grid-cols-12 gap-6 items-center shadow-[0_2px_8px_rgba(15,23,42,0.01)]">
           <div className="md:col-span-5 space-y-2">
-            <div className="inline-flex items-center gap-2 px-2.5 py-0.5 bg-[#00B4AF]/10 border border-[#00B4AF]/30 rounded-md">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#00B4AF]" />
-              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#00B4AF]">Capabilities Matrix</span>
+            <div className="inline-flex items-center gap-2 px-2.5 py-0.5 bg-[#E4B72A]/10 border border-[#E4B72A]/30 rounded-md">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#E4B72A]" />
+              <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#E4B72A]">Capabilities Matrix</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-[#0F172A]">
               Our Core Services.
@@ -133,7 +133,7 @@ const ServiceSection = () => {
                 onMouseEnter={() => setHoveredIndex(index)}
                 className="w-full bg-white border border-[#E2E8F0] rounded-xl p-6 md:p-8 flex flex-col lg:flex-row items-stretch justify-between gap-6 md:gap-8 relative transition-all duration-200 shadow-[0_2px_6px_rgba(15,23,42,0.01)] hover:shadow-md cursor-pointer overflow-hidden"
               >
-                <div className={`absolute top-0 left-0 right-0 h-[3px] bg-[#00B4AF] transition-transform duration-300 origin-left ${isHovered ? 'scale-x-100' : 'scale-x-0'}`} />
+                <div className={`absolute top-0 left-0 right-0 h-[3px] bg-[#E4B72A] transition-transform duration-300 origin-left ${isHovered ? 'scale-x-100' : 'scale-x-0'}`} />
 
                 <div className="lg:w-[45%] flex flex-col justify-between space-y-4">
                   <div className="space-y-2">
@@ -141,11 +141,11 @@ const ServiceSection = () => {
                       <span className="text-xs font-mono font-bold text-[#64748B] bg-[#F8FAFC] border border-[#E2E8F0] w-6 h-6 rounded flex items-center justify-center">
                         0{index + 1}
                       </span>
-                      <h3 className="text-xl font-bold tracking-tight text-[#0F172A] transition-colors duration-200 group-hover:text-[#00B4AF]">
+                      <h3 className="text-xl font-bold tracking-tight text-[#0F172A] transition-colors duration-200 group-hover:text-[#E4B72A]">
                         {service.title}
                       </h3>
                     </div>
-                    <p className="text-xs font-bold text-[#00B4AF] tracking-wide uppercase">
+                    <p className="text-xs font-bold text-[#E4B72A] tracking-wide uppercase">
                       {service.tagline}
                     </p>
                   </div>
@@ -161,7 +161,7 @@ const ServiceSection = () => {
                   <div className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center gap-2.5 text-xs font-semibold text-[#64748B]">
-                        <svg className="w-3.5 h-3.5 text-[#00B4AF] shrink-0" fill="none" stroke="currentColor" strokeWidth="3.5" viewBox="0 0 24 24">
+                        <svg className="w-3.5 h-3.5 text-[#E4B72A] shrink-0" fill="none" stroke="currentColor" strokeWidth="3.5" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
                         <span className="text-[#0F172A] text-[13px]">{feature}</span>
@@ -170,7 +170,7 @@ const ServiceSection = () => {
                   </div>
                 </div>
 
-                <div className="lg:w-[18%] border border-[#E2E8F0] lg:border-l-2 lg:border-l-[#00B4AF] rounded-lg lg:rounded-r-lg lg:rounded-l-none p-5 flex flex-col justify-center items-center lg:items-end text-center lg:text-right bg-gradient-to-br from-white to-[#F8FAFC]">
+                <div className="lg:w-[18%] border border-[#E2E8F0] lg:border-l-2 lg:border-l-[#E4B72A] rounded-lg lg:rounded-r-lg lg:rounded-l-none p-5 flex flex-col justify-center items-center lg:items-end text-center lg:text-right bg-gradient-to-br from-white to-[#F8FAFC]">
                   <span className="text-3xl md:text-4xl font-black tracking-tight text-[#0F172A] leading-none">
                     {service.metric}
                   </span>

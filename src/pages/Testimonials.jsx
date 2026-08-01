@@ -56,14 +56,14 @@ export default function TestimonialSection() {
           
           {/* Sticky Left Editorial Header Block */}
           <div className="col-span-1 lg:col-span-5 lg:sticky lg:top-24">
-            <nav className="flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-[#00B4AF] mb-4 font-bold">
+            <nav className="flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-[#E4B72A] mb-4 font-bold">
               <span className="w-6 h-[1px] bg-slate-300" />
               <span>Strategic Ecosystem</span>
             </nav>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter text-[#0F2C59] mb-6 leading-[0.95]">
               TECHNICAL <br />
-              <span className="text-[#00B4AF]">ALLIANCE.</span>
+              <span className="text-[#E4B72A]">ALLIANCE.</span>
             </h2>
             
             <p className="text-[13px] text-slate-500 font-semibold leading-relaxed mb-8 max-w-md">
@@ -77,7 +77,7 @@ export default function TestimonialSection() {
                 <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mt-1">Uptime Delivery</p>
               </div>
               <div>
-                <p className="text-3xl font-black text-[#00B4AF] tracking-tighter">45MS</p>
+                <p className="text-3xl font-black text-[#E4B72A] tracking-tighter">45MS</p>
                 <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mt-1">Average Response</p>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function TestimonialSection() {
                   {/* Clean Minimal Matrix Header */}
                   <div className="absolute right-6 top-6 flex items-center gap-1">
                     {[...Array(item.rating)].map((_, i) => (
-                      <span key={i} className="text-[#00B4AF] text-xs font-bold">✦</span>
+                      <span key={i} className="text-[#E4B72A] text-xs font-bold">✦</span>
                     ))}
                   </div>
 
@@ -131,13 +131,13 @@ export default function TestimonialSection() {
                         {item.author}
                       </h4>
                       <p className="text-[10px] text-slate-400 font-bold uppercase tracking-wide truncate mt-0.5">
-                        {item.role}, <span className="text-[#00B4AF]">{item.company}</span>
+                        {item.role}, <span className="text-[#E4B72A]">{item.company}</span>
                       </p>
                     </div>
                   </div>
 
                   {/* Absolute Border Active Highlight Track */}
-                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#00B4AF] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#E4B72A] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                 </motion.div>
               );
             })}

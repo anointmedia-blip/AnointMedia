@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { 
-  ArrowRight, Check, Target, Eye, Lightbulb, Users, 
+import {
+  ArrowRight, Check, Target, Eye, Lightbulb, Users,
   Code, Search, Megaphone, Share2, Award, Compass,
   ChevronRight, Quote
 } from 'lucide-react';
@@ -48,39 +48,39 @@ export default function AboutUs() {
 
   return (
     <div className="bg-white text-[#0B2341] font-sans antialiased selection:bg-[#13D8C2]/30 overflow-x-hidden">
-      
+
       {/* ==========================================
           SECTION 1: HERO
          ========================================== */}
       <section className="relative pt-12 pb-24 lg:pt-10 lg:pb-36 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#13D8C2]/5 via-white to-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-          
-          <motion.div 
+
+          <motion.div
             className="lg:col-span-7 space-y-8 text-left"
             initial="hidden"
             animate="visible"
             variants={containerStagger}
           >
             <motion.h1 variants={textVariant} className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[#0B2341] leading-[1.12]">
-              Most business owners don’t need more marketing. <br/> 
+              Most business owners don’t need more marketing. <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0B2341] to-[#13D8C2]">
                 They need more customers.
               </span>
             </motion.h1>
-            
+
             <motion.p variants={textVariant} className="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-2xl">
               That’s why we focus on building websites, running campaigns, and creating systems that help businesses get found online and generate real inquiries.
             </motion.p>
-            
+
             <motion.div variants={textVariant} className="flex flex-wrap gap-4 pt-2">
-              <button 
+              <button
                 onClick={handleConnectClick}
                 className="px-8 py-4 bg-[#0B2341] hover:bg-[#0B2341]/90 text-white font-bold rounded-xl tracking-wide shadow-lg shadow-[#0B2341]/10 transition-all flex items-center gap-2 group cursor-pointer"
               >
                 Book A Call
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button 
+              <button
                 onClick={handleConnectClick}
                 className="px-8 py-4 border-2 border-[#0B2341] text-[#0B2341] font-bold rounded-xl hover:bg-[#0B2341]/5 transition-all cursor-pointer"
               >
@@ -89,7 +89,7 @@ export default function AboutUs() {
             </motion.div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="lg:col-span-5"
             initial={{ opacity: 0, scale: 0.98, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -97,9 +97,9 @@ export default function AboutUs() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100 bg-slate-100 group">
               <div className="absolute inset-0 bg-[#0B2341]/5 mix-blend-multiply transition-opacity group-hover:opacity-0 duration-300" />
-              <img 
-                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YWdlbmN5fGVufDB8fDB8fHww" 
-                alt="We Promote Strategic Review Session" 
+              <img
+                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YWdlbmN5fGVufDB8fDB8fHww"
+                alt="Anoint Media Strategic Review Session"
                 className="w-full h-full object-cover aspect-[4/3] lg:aspect-[11/10] transform scale-100 group-hover:scale-[1.01] transition-transform duration-500"
               />
             </div>
@@ -113,18 +113,18 @@ export default function AboutUs() {
          ========================================== */}
       <section className="py-24 border-t border-slate-100 bg-slate-50/60 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
-          
+
           <div className="lg:col-span-5 order-last lg:order-first">
             <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-white p-3">
-              <img 
-                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1000&q=80" 
-                alt="Honest operational collaborative session" 
+              <img
+                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1000&q=80"
+                alt="Honest operational collaborative session"
                 className="rounded-xl w-full h-full object-cover aspect-[4/5]"
               />
             </div>
           </div>
 
-          <motion.div 
+          <motion.div
             className="lg:col-span-7 space-y-6"
             initial="hidden"
             whileInView="visible"
@@ -136,9 +136,9 @@ export default function AboutUs() {
               Built on Transparency, Driven by Performance
             </motion.h2>
             <div className="h-1 w-12 bg-[#0B2341] rounded-full my-2" />
-            
+
             <motion.p variants={textVariant} className="text-base sm:text-lg text-slate-6xl text-slate-600 leading-relaxed font-normal">
-              We Promote was founded with a single, clear mission: to cut through the noise of the digital landscape and deliver straightforward, honest, and impactful results for businesses looking to scale.
+              Anoint Media was founded with a single, clear mission: to cut through the noise of the digital landscape and deliver straightforward, honest, and impactful results for businesses looking to scale.
             </motion.p>
             <motion.p variants={textVariant} className="text-base sm:text-lg text-slate-6xl text-slate-600 leading-relaxed font-normal">
               We recognized early on that businesses don't just need software developers or copywriters in isolation—they need a cohesive partner that bridges the gap between deep technical capability and creative marketing strategy.
@@ -161,7 +161,7 @@ export default function AboutUs() {
           <p className="text-slate-500 text-sm sm:text-base max-w-xl mx-auto">The principles that dictate how we protect your investments and handle your operational strategies daily.</p>
         </div>
 
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
           initial="hidden"
           whileInView="visible"
@@ -174,7 +174,7 @@ export default function AboutUs() {
             { icon: Lightbulb, title: "Continuous Innovation", desc: "The landscape evolves daily. We systematically refine our internal strategies to keep your brand consistently positioned ahead of market curves." },
             { icon: Users, title: "Long-Term Partnerships", desc: "We measure our success by how long we sustain your growth trajectory, acting as a direct extension of your management team." }
           ].map((belief, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               variants={cardVariant}
               whileHover={{ y: -5, borderColor: '#0B2341' }}
@@ -203,7 +203,7 @@ export default function AboutUs() {
             <p className="text-slate-500 text-sm sm:text-base">Comprehensive, high-performance solutions tailored to your operational parameters.</p>
           </div>
 
-          <motion.div 
+          <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             initial="hidden"
             whileInView="visible"
@@ -218,8 +218,8 @@ export default function AboutUs() {
               { icon: Award, s: "Branding", d: "Cohesive visual identity systems, corporate messaging standards, and functional assets that definitively outpace industry competitors." },
               { icon: Compass, s: "Digital Strategy", d: "High-level diagnostic roadmap evaluations focused squarely on uncovering new revenue paths and optimizing current operational touchpoints." }
             ].map((srv, index) => (
-              <motion.div 
-                key={index} 
+              <motion.div
+                key={index}
                 variants={cardVariant}
                 whileHover={{ y: -4, boxShadow: "0 12px 30px rgba(11,35,65,0.04)" }}
                 className="bg-white border border-slate-200/70 p-8 rounded-2xl transition-all duration-300 group relative"
@@ -241,18 +241,18 @@ export default function AboutUs() {
          ========================================== */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
-          
+
           <div className="lg:col-span-6">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-slate-50 border border-slate-200 p-4">
-              <img 
-                src="https://images.unsplash.com/photo-1606836591695-4d58a73eba1e?w=900&auto=format&fit=crop&q=60" 
+              <img
+                src="https://images.unsplash.com/photo-1606836591695-4d58a73eba1e?w=900&auto=format&fit=crop&q=60"
                 alt="Operational transparent sync meeting"
                 className="rounded-xl w-full h-full object-cover aspect-[4/3] lg:aspect-[5/6]"
               />
             </div>
           </div>
 
-          <motion.div 
+          <motion.div
             className="lg:col-span-6 space-y-8"
             initial="hidden"
             whileInView="visible"
@@ -306,7 +306,7 @@ export default function AboutUs() {
               "Restaurants", "Healthcare", "Construction", "Real Estate",
               "Law Firms", "Home Services", "E-Commerce", "Hospitality"
             ].map((industry, indIdx) => (
-              <div 
+              <div
                 key={indIdx}
                 className="bg-white border border-slate-200 p-5 rounded-xl flex items-center justify-between group shadow-sm hover:border-[#0B2341] transition-all duration-200 cursor-default"
               >
@@ -330,8 +330,8 @@ export default function AboutUs() {
 
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
           {["USA", "Canada", "UAE", "UK", "India"].map((country, cIdx) => (
-            <div 
-              key={cIdx} 
+            <div
+              key={cIdx}
               className="bg-white border border-slate-200 px-10 py-5 rounded-xl font-black text-sm text-[#0B2341] shadow-sm tracking-widest uppercase hover:bg-[#0B2341] hover:text-white transition-colors duration-200 cursor-default"
             >
               {country}
@@ -399,7 +399,7 @@ export default function AboutUs() {
       <section className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="bg-[#0B2341] text-white rounded-3xl p-10 sm:p-16 lg:p-20 text-center space-y-8 shadow-2xl relative overflow-hidden">
           <div className="absolute inset-0 opacity-5 pointer-events-none bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-          
+
           <div className="relative z-10 max-w-3xl mx-auto space-y-4">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">Let’s Build Something Great Together</h2>
             <p className="text-slate-300 text-sm sm:text-base md:text-lg max-w-xl mx-auto font-normal leading-relaxed">
@@ -408,13 +408,13 @@ export default function AboutUs() {
           </div>
 
           <div className="relative z-10 flex flex-wrap justify-center gap-4 pt-2">
-            <button 
+            <button
               onClick={handleConnectClick}
               className="px-8 py-4 bg-[#13D8C2] hover:bg-[#13D8C2]/90 text-[#0B2341] font-bold tracking-wide rounded-xl shadow-lg shadow-[#13D8C2]/10 transition-colors cursor-pointer"
             >
               Book A Call
             </button>
-            <button 
+            <button
               onClick={handleConnectClick}
               className="px-8 py-4 bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold rounded-xl transition-all cursor-pointer"
             >

@@ -92,7 +92,7 @@ const ServiceLayout = ({
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left Main Context Column */}
           <div className="lg:col-span-7 space-y-8">
-            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#00B4AF] block">
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#E4B72A] block">
               Premium Solutions
             </span>
             <h1 className="text-4xl md:text-5xl font-black uppercase tracking-tighter text-[#0F2C59] leading-[0.95]">
@@ -107,7 +107,7 @@ const ServiceLayout = ({
                     key={index}
                     className="flex items-start gap-4 bg-[#F8F7FF] p-4 border border-slate-100 transition-colors duration-300"
                   >
-                    <span className="text-[#00B4AF] font-bold text-xs mt-0.5 shrink-0">
+                    <span className="text-[#E4B72A] font-bold text-xs mt-0.5 shrink-0">
                       ✦
                     </span>
                     <p className="text-[11px] font-bold uppercase tracking-wider text-[#0F2C59] leading-tight">
@@ -119,7 +119,7 @@ const ServiceLayout = ({
             )}
 
             <div className="pt-4">
-              <button className="px-7 py-3.5 bg-[#00B4AF] hover:bg-[#009e99] transition-all duration-300 text-white font-bold uppercase tracking-[0.15em] text-[11px] rounded-xs shadow-sm hover:shadow-md">
+              <button className="px-7 py-3.5 bg-[#E4B72A] hover:bg-[#CD9D20] transition-all duration-300 text-white font-bold uppercase tracking-[0.15em] text-[11px] rounded-xs shadow-sm hover:shadow-md">
                 Schedule a Meeting
               </button>
             </div>
@@ -128,7 +128,7 @@ const ServiceLayout = ({
           {/* Right Main Consultation Form Column */}
           <div className="lg:col-span-5 w-full lg:sticky lg:top-28">
             {showForm ? (
-              <div className="bg-white border border-slate-200/60 p-6 sm:p-8 rounded-2xl shadow-[0_20px_50px_-12px_rgba(15,44,89,0.08)] border-t-4 border-t-[#00B4AF]">
+              <div className="bg-white border border-slate-200/60 p-6 sm:p-8 rounded-2xl shadow-[0_20px_50px_-12px_rgba(15,44,89,0.08)] border-t-4 border-t-[#E4B72A]">
                 <h3 className="text-xs font-black tracking-[0.25em] text-[#0F2C59] text-center uppercase mb-6 pb-4 border-b border-slate-100">
                   Request Consultation
                 </h3>
@@ -144,7 +144,7 @@ const ServiceLayout = ({
                       onChange={handleChange}
                       placeholder="John Smith"
                       required
-                      className="w-full h-11 px-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#00B4AF] focus:ring-4 focus:ring-[#00B4AF]/5 outline-none transition-all duration-200"
+                      className="w-full h-11 px-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#E4B72A] focus:ring-4 focus:ring-[#E4B72A]/5 outline-none transition-all duration-200"
                     />
                   </div>
 
@@ -159,7 +159,7 @@ const ServiceLayout = ({
                       onChange={handleChange}
                       placeholder="john@company.com"
                       required
-                      className="w-full h-11 px-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#00B4AF] focus:ring-4 focus:ring-[#00B4AF]/5 outline-none transition-all duration-200"
+                      className="w-full h-11 px-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#E4B72A] focus:ring-4 focus:ring-[#E4B72A]/5 outline-none transition-all duration-200"
                     />
                   </div>
 
@@ -174,7 +174,7 @@ const ServiceLayout = ({
                         value={formData.website}
                         onChange={handleChange}
                         placeholder="company.com"
-                        className="w-full h-11 px-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#00B4AF] focus:ring-4 focus:ring-[#00B4AF]/5 outline-none transition-all duration-200"
+                        className="w-full h-11 px-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#E4B72A] focus:ring-4 focus:ring-[#E4B72A]/5 outline-none transition-all duration-200"
                       />
                     </div>
                     <div className="space-y-1">
@@ -187,7 +187,7 @@ const ServiceLayout = ({
                         value={formData.phone}
                         onChange={handleChange}
                         placeholder="+1 (555) 000-0000"
-                        className="w-full h-11 px-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#00B4AF] focus:ring-4 focus:ring-[#00b4af]/5 outline-none transition-all duration-200"
+                        className="w-full h-11 px-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#E4B72A] focus:ring-4 focus:ring-[#E4B72A]/5 outline-none transition-all duration-200"
                       />
                     </div>
                   </div>
@@ -202,7 +202,7 @@ const ServiceLayout = ({
                       onChange={handleChange}
                       placeholder="Tell us about your technical objectives, timelines, and scaling parameters..."
                       rows="3"
-                      className="w-full p-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#00B4AF] focus:ring-4 focus:ring-[#00B4AF]/5 outline-none resize-none transition-all duration-200"
+                      className="w-full p-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#E4B72A] focus:ring-4 focus:ring-[#E4B72A]/5 outline-none resize-none transition-all duration-200"
                     />
                   </div>
 
@@ -249,7 +249,7 @@ const ServiceLayout = ({
               </div>
             ) : (
               <div className="w-full flex justify-center">
-                <div className="w-12 h-0.5 bg-[#00B4AF]" />
+                <div className="w-12 h-0.5 bg-[#E4B72A]" />
               </div>
             )}
           </div>
@@ -273,7 +273,7 @@ const ServiceLayout = ({
               </div>
             </div>
             <div className="lg:col-span-7 space-y-6">
-              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#00B4AF] block">
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#E4B72A] block">
                 Analysis & Overview
               </span>
               <h2 className="text-4xl font-black uppercase tracking-tighter text-[#0F2C59] leading-[0.95]">
@@ -294,7 +294,7 @@ const ServiceLayout = ({
         <section className="w-full py-24 bg-[#FDFDFC] border-t border-slate-200/60">
           <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24">
             <div className="mb-16">
-              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#00B4AF] mb-4 block">
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#E4B72A] mb-4 block">
                 Capabilities Matrix
               </span>
               <h2 className="text-5xl font-black uppercase tracking-tighter text-[#0F2C59] leading-[0.95]">
@@ -308,7 +308,7 @@ const ServiceLayout = ({
                   className="bg-[#FDFDFC] p-8 flex flex-col items-start justify-between hover:bg-[#F8F7FF] transition-colors duration-500 group min-h-[250px]"
                 >
                   <div className="space-y-4">
-                    <div className="text-[#00B4AF] group-hover:text-[#0F2C59] transition-colors duration-500">
+                    <div className="text-[#E4B72A] group-hover:text-[#0F2C59] transition-colors duration-500">
                       {item.icon || (
                         <svg
                           className="w-5 h-5"
@@ -332,7 +332,7 @@ const ServiceLayout = ({
                       {item.description}
                     </p>
                   </div>
-                  <div className="w-5 h-0.5 bg-slate-200 group-hover:w-full group-hover:bg-[#00B4AF] transition-all duration-500 mt-6" />
+                  <div className="w-5 h-0.5 bg-slate-200 group-hover:w-full group-hover:bg-[#E4B72A] transition-all duration-500 mt-6" />
                 </div>
               ))}
             </div>
@@ -347,7 +347,7 @@ const ServiceLayout = ({
             <p className="text-3xl font-black uppercase tracking-tighter text-white max-w-3xl leading-[0.95]">
               {bannerText}
             </p>
-            <button className="whitespace-nowrap px-6 py-3.5 bg-[#00B4AF] hover:bg-[#009e99] transition-colors duration-300 text-white font-extrabold text-[11px] tracking-[0.2em] uppercase rounded-xs shadow-md">
+            <button className="whitespace-nowrap px-6 py-3.5 bg-[#E4B72A] hover:bg-[#CD9D20] transition-colors duration-300 text-white font-extrabold text-[11px] tracking-[0.2em] uppercase rounded-xs shadow-md">
               {bannerBtnText || "Connect Alliance"}
             </button>
           </div>
@@ -358,7 +358,7 @@ const ServiceLayout = ({
       {pillarsItems.length > 0 && (
         <section className="w-full py-24 max-w-6xl mx-auto px-6 md:px-12 lg:px-24 bg-[#FDFDFC]">
           <div className="mb-16">
-            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#00B4AF] mb-4 block">
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#E4B72A] mb-4 block">
               Execution Architecture
             </span>
             <h2 className="text-5xl font-black uppercase tracking-tighter text-[#0F2C59] leading-[0.95]">
@@ -371,7 +371,7 @@ const ServiceLayout = ({
                 key={index}
                 className="flex gap-4 sm:gap-6 items-start border-b border-slate-100 pb-6"
               >
-                <div className="text-[11px] font-black uppercase tracking-widest text-[#00B4AF] bg-[#F8F7FF] w-9 h-9 rounded-md flex items-center justify-center shrink-0 border border-slate-100 shadow-3xs">
+                <div className="text-[11px] font-black uppercase tracking-widest text-[#E4B72A] bg-[#F8F7FF] w-9 h-9 rounded-md flex items-center justify-center shrink-0 border border-slate-100 shadow-3xs">
                   {pillar.customIcon || String(index + 1).padStart(2, "0")}
                 </div>
                 <div className="space-y-2">
@@ -406,7 +406,7 @@ const ServiceLayout = ({
 
             {/* Direct Copywriting Context Block */}
             <div className="w-full lg:w-[65%] space-y-6 text-center lg:text-left">
-              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#00B4AF] block">
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#E4B72A] block">
                 Next Stage Engagement
               </span>
               <h2 className="text-4xl font-black uppercase tracking-tighter text-[#0F2C59] leading-[0.95]">
@@ -416,7 +416,7 @@ const ServiceLayout = ({
                 {bottomCtaDescription}
               </p>
               <div className="pt-2">
-                <button className="px-8 py-3.5 bg-[#00B4AF] hover:bg-[#009e99] transition-all duration-300 text-white font-black uppercase text-[11px] tracking-[0.2em] rounded-xs shadow-md">
+                <button className="px-8 py-3.5 bg-[#E4B72A] hover:bg-[#CD9D20] transition-all duration-300 text-white font-black uppercase text-[11px] tracking-[0.2em] rounded-xs shadow-md">
                   {bottomCtaBtnText || "Initiate Brief"}
                 </button>
               </div>
