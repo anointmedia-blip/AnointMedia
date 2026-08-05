@@ -115,7 +115,7 @@ const Contact = () => {
                   </svg>
                 </div>
                 <a href="tel:+19069706661" className="font-bold text-[15.5px] tracking-wide text-white/90 group-hover:text-white transition-colors">
-                  (906) 970-6661
+                  +91 98779 74161
                 </a>
               </div>
 
@@ -152,7 +152,7 @@ const Contact = () => {
               </div>
               <div>
                 <label className="block mb-2 text-sm font-bold text-[#10223d]">Email Address *</label>
-                <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="company@gmail.com" required className="w-full h-14 px-5 rounded-xl border border-slate-200 bg-white text-[#10223d] font-medium focus:border-[#E4B72A] focus:ring-4 focus:ring-[#E4B72A]/10 outline-none transition duration-200" />
+                <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Company@gmail.com" required className="w-full h-14 px-5 rounded-xl border border-slate-200 bg-white text-[#10223d] font-medium focus:border-[#E4B72A] focus:ring-4 focus:ring-[#E4B72A]/10 outline-none transition duration-200" />
               </div>
             </div>
 

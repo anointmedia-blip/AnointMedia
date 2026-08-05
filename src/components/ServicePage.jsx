@@ -142,7 +142,7 @@ const ServiceLayout = ({
                       name="fullName"
                       value={formData.fullName}
                       onChange={handleChange}
-                      placeholder="John Smith"
+                      placeholder="Aapka Naam"
                       required
                       className="w-full h-11 px-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#E4B72A] focus:ring-4 focus:ring-[#E4B72A]/5 outline-none transition-all duration-200"
                     />
@@ -157,7 +157,7 @@ const ServiceLayout = ({
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@company.com"
+                      placeholder="Company@gmail.com"
                       required
                       className="w-full h-11 px-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#E4B72A] focus:ring-4 focus:ring-[#E4B72A]/5 outline-none transition-all duration-200"
                     />
@@ -186,7 +186,7 @@ const ServiceLayout = ({
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+91 98765 43210"
                         className="w-full h-11 px-4 text-xs font-semibold rounded-lg border border-slate-200 bg-[#FDFDFC] text-[#0F2C59] placeholder-slate-400 focus:border-[#E4B72A] focus:ring-4 focus:ring-[#E4B72A]/5 outline-none transition-all duration-200"
                       />
                     </div>
@@ -210,11 +210,10 @@ const ServiceLayout = ({
                     <button
                       type="submit"
                       disabled={loading}
-                      className={`w-full h-12 text-white font-black uppercase tracking-[0.2em] text-[11px] rounded-lg shadow-sm flex items-center justify-center gap-2 transition-all duration-200 ${
-                        loading
-                          ? "bg-slate-400 cursor-not-allowed"
-                          : "bg-[#0F2C59] hover:bg-[#0b2143] hover:shadow-md"
-                      }`}
+                      className={`w-full h-12 text-white font-black uppercase tracking-[0.2em] text-[11px] rounded-lg shadow-sm flex items-center justify-center gap-2 transition-all duration-200 ${loading
+                        ? "bg-slate-400 cursor-not-allowed"
+                        : "bg-[#0F2C59] hover:bg-[#0b2143] hover:shadow-md"
+                        }`}
                     >
                       {loading ? (
                         <>
