@@ -18,7 +18,7 @@ import WebDesign from "./pages/services/WebDesign";
 import Website from "./pages/services/Website";
 import WordPressMaintainance from "./pages/services/WordPressMaintainance";
 import Dental from "./pages/services/Dental";
-import Skincare from "./pages/services/Skincare";
+import Skincare from "./pages/services/SkinCare";
 import SkinClinicGrowth from "./pages/services/SkinClinicGrowth";
 import HotelMarketing from "./pages/services/HotelMarketing";
 import HealthcareMarketing from "./pages/services/HealthcareMarketing";
