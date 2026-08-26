@@ -191,7 +191,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-6">
           <a
-            href="tel:+19069706661"
+            href="tel:+919877974161"
             className="hover:text-[#E4B72A] transition"
           >
             +91 98779 74161
@@ -516,9 +516,9 @@ const Navbar = () => {
                   </a>
                 </div> */}
                 <div className="flex items-center gap-3">
-                  <span className="text-[20px]">🇺🇸</span>
+                  <span className="text-[20px]">🇮🇳</span>
                   <a
-                    href="tel:+14192621977"
+                    href="tel:+919877974161"
                     className="text-[13.5px] font-bold text-slate-700"
                   >
                     +91 98779 74161

@@ -129,7 +129,7 @@ const Footer = () => {
             <img
               src={logo}
               alt="Anoint Media"
-              className="h-25 object-contain mb-8"
+              className="h-14 object-contain mb-8"
             />
             <p className="text-[#182f59]/70 font-medium text-[15px] leading-relaxed max-w-sm mb-8">
               We deploy multi-channel systems across digital engineering,
@@ -208,7 +208,7 @@ const Footer = () => {
             </span>
             <div className="space-y-4 flex flex-col items-start">
               <motion.a
-                href="tel:+19069706661"
+                href="tel:+919877974161"
                 whileHover={{ x: 4 }}
                 transition={{ type: "spring", stiffness: 400, damping: 25 }}
                 className="footer-brand-link font-mono tracking-tight text-[15px]"

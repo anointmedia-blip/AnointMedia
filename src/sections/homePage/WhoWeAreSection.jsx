@@ -69,7 +69,7 @@ const WhoWeAreSection = () => {
             className="text-slate-900 text-5xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.05] flex flex-col uppercase"
           >
             <span>Who</span>
-            <span className="text-[#E4B72A] pl-6 sm:pl-8">We</span>
+            <span className="text-[#E4B72A]">We</span>
             <span>Are.</span>
           </motion.h2>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import heroImg1 from "../../assets/heroImg1.png";
+import heroImg1 from "../../assets/heroImg1-CY-mIF3b.png";
 import heroImg2 from "../../assets/heroImg2.png";
 import heroImg3 from "../../assets/heroImg3.png";
 import { useNavigate } from "react-router-dom";

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
+import { GOOGLE_SHEET_SCRIPT_URL } from "../config/sheets";
 
 const ServiceLayout = ({
   // Hero Props
@@ -39,6 +41,13 @@ const ServiceLayout = ({
     message: "",
   });
 
+  const handleScrollToForm = () => {
+    const formElement = document.getElementById("consultation-form");
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -52,7 +61,7 @@ const ServiceLayout = ({
 
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzP96mfiVgcSTISfueZxqFuzeIF6zGeLa6uUL3cpsTW2tExLBxPmxAEEgbjWjx-dZXv/exec",
+        GOOGLE_SHEET_SCRIPT_URL,
         {
           method: "POST",
           body: JSON.stringify({
@@ -119,16 +128,21 @@ const ServiceLayout = ({
             )}
 
             <div className="pt-4">
-              <button className="px-7 py-3.5 bg-[#E4B72A] hover:bg-[#CD9D20] transition-all duration-300 text-white font-bold uppercase tracking-[0.15em] text-[11px] rounded-xs shadow-sm hover:shadow-md">
+              <motion.button
+                whileHover={{ y: -2, scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={handleScrollToForm}
+                className="px-7 py-3.5 bg-[#E4B72A] hover:bg-[#CD9D20] transition-all duration-300 text-white font-bold uppercase tracking-[0.15em] text-[11px] rounded-xs shadow-sm hover:shadow-md cursor-pointer"
+              >
                 Schedule a Meeting
-              </button>
+              </motion.button>
             </div>
           </div>
 
           {/* Right Main Consultation Form Column */}
           <div className="lg:col-span-5 w-full lg:sticky lg:top-28">
             {showForm ? (
-              <div className="bg-white border border-slate-200/60 p-6 sm:p-8 rounded-2xl shadow-[0_20px_50px_-12px_rgba(15,44,89,0.08)] border-t-4 border-t-[#E4B72A]">
+              <div id="consultation-form" className="bg-white border border-slate-200/60 p-6 sm:p-8 rounded-2xl shadow-[0_20px_50px_-12px_rgba(15,44,89,0.08)] border-t-4 border-t-[#E4B72A]">
                 <h3 className="text-xs font-black tracking-[0.25em] text-[#0F2C59] text-center uppercase mb-6 pb-4 border-b border-slate-100">
                   Request Consultation
                 </h3>
@@ -207,10 +221,12 @@ const ServiceLayout = ({
                   </div>
 
                   <div className="pt-2">
-                    <button
+                    <motion.button
+                      whileHover={!loading ? { y: -2 } : {}}
+                      whileTap={!loading ? { scale: 0.98 } : {}}
                       type="submit"
                       disabled={loading}
-                      className={`w-full h-12 text-white font-black uppercase tracking-[0.2em] text-[11px] rounded-lg shadow-sm flex items-center justify-center gap-2 transition-all duration-200 ${loading
+                      className={`w-full h-12 text-white font-black uppercase tracking-[0.2em] text-[11px] rounded-lg shadow-sm flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer ${loading
                         ? "bg-slate-400 cursor-not-allowed"
                         : "bg-[#0F2C59] hover:bg-[#0b2143] hover:shadow-md"
                         }`}
@@ -242,7 +258,7 @@ const ServiceLayout = ({
                       ) : (
                         "Submit Request"
                       )}
-                    </button>
+                    </motion.button>
                   </div>
                 </form>
               </div>
@@ -346,9 +362,14 @@ const ServiceLayout = ({
             <p className="text-3xl font-black uppercase tracking-tighter text-white max-w-3xl leading-[0.95]">
               {bannerText}
             </p>
-            <button className="whitespace-nowrap px-6 py-3.5 bg-[#E4B72A] hover:bg-[#CD9D20] transition-colors duration-300 text-white font-extrabold text-[11px] tracking-[0.2em] uppercase rounded-xs shadow-md">
+            <motion.button
+              whileHover={{ y: -2, scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              onClick={handleScrollToForm}
+              className="whitespace-nowrap px-6 py-3.5 bg-[#E4B72A] hover:bg-[#CD9D20] transition-colors duration-300 text-white font-extrabold text-[11px] tracking-[0.2em] uppercase rounded-xs shadow-md cursor-pointer"
+            >
               {bannerBtnText || "Connect Alliance"}
-            </button>
+            </motion.button>
           </div>
         </section>
       )}
@@ -415,9 +436,14 @@ const ServiceLayout = ({
                 {bottomCtaDescription}
               </p>
               <div className="pt-2">
-                <button className="px-8 py-3.5 bg-[#E4B72A] hover:bg-[#CD9D20] transition-all duration-300 text-white font-black uppercase text-[11px] tracking-[0.2em] rounded-xs shadow-md">
+                <motion.button
+                  whileHover={{ y: -2, scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={handleScrollToForm}
+                  className="px-8 py-3.5 bg-[#E4B72A] hover:bg-[#CD9D20] transition-all duration-300 text-white font-black uppercase text-[11px] tracking-[0.2em] rounded-xs shadow-md cursor-pointer"
+                >
                   {bottomCtaBtnText || "Initiate Brief"}
-                </button>
+                </motion.button>
               </div>
             </div>
           </div>

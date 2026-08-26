@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { toast } from "react-toastify";
+import { GOOGLE_SHEET_SCRIPT_URL } from "../../config/sheets";
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -50,7 +51,7 @@ const Contact = () => {
       setLoading(true);
 
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzP96mfiVgcSTISfueZxqFuzeIF6zGeLa6uUL3cpsTW2tExLBxPmxAEEgbjWjx-dZXv/exec",
+        GOOGLE_SHEET_SCRIPT_URL,
         {
           method: "POST",
           body: JSON.stringify(formData),
@@ -114,7 +115,7 @@ const Contact = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
-                <a href="tel:+19069706661" className="font-bold text-[15.5px] tracking-wide text-white/90 group-hover:text-white transition-colors">
+                <a href="tel:+919877974161" className="font-bold text-[15.5px] tracking-wide text-white/90 group-hover:text-white transition-colors">
                   +91 98779 74161
                 </a>
               </div>
@@ -190,7 +191,7 @@ const Contact = () => {
                 {formData.budget.length > 0 && <span className="text-xs font-bold text-[#10223d] bg-[#10223d]/5 px-2.5 py-0.5 rounded-md">{formData.budget.length} Selected</span>}
               </label>
               <div className="flex flex-wrap gap-2.5">
-                {["$500 - $1,000", "$1,000 - $3,000", "$3,000 - $5,000", "$5,000 - $10,000", "$10,000+"].map((budget) => {
+                {["$300 - $500", "$500 - $800", "$800 - $1200", "$1200 - $1500", "$2,000+"].map((budget) => {
                   const isSelected = formData.budget.includes(budget);
                   return (
                     <button type="button" key={budget} onClick={() => handleMultiSelect("budget", budget)} className={`px-4 py-2.5 rounded-xl border text-xs sm:text-sm font-semibold transition-all duration-200 ${isSelected ? "bg-[#10223d] border-[#10223d] text-white shadow-md" : "bg-white border-slate-200 text-slate-600 hover:border-[#10223d]/30 hover:text-[#10223d]"}`}>

@@ -18,7 +18,7 @@ import WebDesign from "./pages/services/WebDesign";
 import Website from "./pages/services/Website";
 import WordPressMaintainance from "./pages/services/WordPressMaintainance";
 import Dental from "./pages/services/Dental";
-import Skincare from "./pages/services/SkinCare";
+import Skincare from "./pages/services/Skincare";
 import SkinClinicGrowth from "./pages/services/SkinClinicGrowth";
 import HotelMarketing from "./pages/services/HotelMarketing";
 import HealthcareMarketing from "./pages/services/HealthcareMarketing";
@@ -77,7 +77,6 @@ const App = () => {
           />
           <Route path="/dental-marketing" element={<Dental />} />
           <Route path="/skincare-marketing" element={<Skincare />} />
-          <Route path="/dental-marketing" element={<Dental />} />
           <Route path="/skin-clinic-growth" element={<SkinClinicGrowth />} />
           <Route path="/hotel-marketing" element={<HotelMarketing />} />
           <Route

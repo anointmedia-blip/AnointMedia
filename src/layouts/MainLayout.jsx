@@ -10,7 +10,7 @@ const MainLayout = () => {
 
       <Navbar />
 
-      <main className="flex-1 pt-[132px]">
+      <main className="flex-1 pt-[70px] sm:pt-[112px] lg:pt-[132px]">
         <Outlet />
       </main>
 
